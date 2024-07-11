@@ -2,9 +2,38 @@
 layout: "main.njk"
 ---
 
+A [Knave: Second
+Edition](https://questingbeast.itch.io/knave-second-edition) and
+[Black Hack](https://the-black-hack.jehaisleprintemps.net/english/)
+mashup. Knavehack is a simple, classless system. Your equipment
+defines your role.
+
 <section>
 
-## Skill checks
+## Stats
+
+### Ability scores
+
+PCs have six abilities with scores rated from 0 to 10:
+
+1. Strength `STR`: power. Climbing, lifting, melee attacks.
+
+2. Dexterity `DEX`: agility. Dodging, sneaking, picking pockets,
+   sleight of hand, lockpicking.
+
+3. Constitution `CON`: heartiness. Resist poison, cold, etc. PCs have
+   10 + `CON` item slots and can take 10 + `CON` wounds before dying.
+
+4. Intelligence `INT`: cunning. Alchemy, magic use. `INT` improves the
+   effectiveness of spells and PCs can cast `INT` spells per day.
+
+5. Wisdom `WIS`: perception. Ranged attacks, foraging, navigation,
+   spell resistance.
+
+6. Charisma `CHA`: personality. Persuasion, coercion. PCs can have a
+   number of companions and patron blessings equal to their `CHA`.
+
+### Skill checks
 
 Roll a d20 + ability score + modifiers (in +5/-5 increments from
 advantages, disadvantages, and careers). If the total equals or
@@ -22,19 +51,34 @@ knowledge must be sought out.
 
 ## Combat
 
+### Movement and distance
+
+Knavehack uses 4 abstract ranges for measuring distances: **Close**,
+**Nearby**, **Far-Away** and **Distant**.
+
+A character can move somewhere **Nearby** as part of an action,
+performing that action at any stage of the move. They can forgo their
+action and move somewhere **Far-Away** instead. Anything beyond
+**Far-Away** can be classified as **Distant** and would take 3 moves
+to get to.
+
+|CLOSE|NEARBY|FAR AWAY|
+|-----|------|--------|
+|0 - 5ft|5 - 60ft|60 - 120ft|
+
 ### Initiative
 
-Make a `CHA` vs. `CHA` check between the sides’ leaders to determine
-which side acts first. On a side’s turn, all of its creatures, in any
-order, may move and take one other action, such as an attack, spell
-casting, move, maneuver, etc.
+If initiative is not obvious (e.g. sneak attacks), flip a coin to
+determine who goes first. On a side’s turn, all of its creatures, in
+any order, may move and take one other action, such as an attack,
+spell casting, move, maneuver, etc.
 
-### Attacks
+### Attacking
 
 Make a check using `STR` (for melee attacks) or `WIS` (for ranged
-attacks) vs. defender’s armor class (11 + armor points). On a 21+, the
-attacker may succeed at a free maneuver. On a natural 1, the weapon
-breaks. Careers never add bonuses to attacks or maneuvers.
+attacks) vs. defender’s armor class `AC` (11 + armor points `AP`). On
+a 21+, the attacker may succeed at a free maneuver. On a natural 1,
+the weapon breaks. Careers never add bonuses to attacks or maneuvers.
 
 Ranged attacks cannot be made while in melee. If the target is in
 melee, the attack takes a -5 penalty.
@@ -58,7 +102,7 @@ the GM agrees is plausible. They can only cause damage indirectly
 appropriate ability check. They can be critical for bringing down
 tough enemies.
 
-### Damage
+### Damage and wounds
 
 Hits deal damage equal to a roll of the weapon’s damage die. If an
 enemy is weak to the type of damage being dealt, it deals direct
@@ -156,39 +200,66 @@ Falcons (1000c).
 
 ## Dungeon delving
 
+### Random encounters
+
 While dungeon delving, time is tracked in 10-minute segments called
 turns. Most actions (moving, searching, fighting, resting, etc.) take
 up one turn.
 
-At the end of each turn, roll the Dungeon Hazard Die and apply the
-result.
+The GM should roll a d4 every 15 minutes of real world play. A result
+of 1-2 means the players will encounter a randomly generated creature
+or distraction in the following turn.
 
-| d6           | hazard                                                                                 |
-|--------------|----------------------------------------------------------------------------------------|
-| 1. encounter | The party has a random encounter.                                                      |
-| 2. fatigue   | Time advances 10 minutes as the party rests.                                           |
-| 3. burn      | Torches tick down one use (out of three). When all three are ticked, torches burn out. |
-| 4. shift     | The dungeon environment changes                                                        |
-| 5. sign      | The players find a sign that a random encounter is nearby.                             |
-| 6. free      | No effect.                                                                             |
+### Creature reactions
 
-If the encounter’s reaction to the party isn’t obvious, the GM may
-roll 2d6 on the following table to determine their attitude. Note that
-the PCs’ actions can cause this to change quickly.
+Some monsters and NPCs will have predetermined personalities and goals
+that will guide a GM when choosing their actions and feelings towards
+the characters. Those that do not, such as randomly encountered
+creatures, make a Reaction roll on the following table:
 
-| 2d6 | reaction |
-|-----|----------|
-|2| Kill the PCs|
-|3| Injure or capture the PCs|
-|4| Harass or rob the PCs|
-|5| Insult, threaten, or command the PCs|
-|6| Avoid the PCs|
-|7| Ignore the PCs|
-|8| Follow or observe the PCs|
-|9| Greet or question the PCs|
-|10| Share information with the PCs|
-|11| Perform minor favors for the PCs|
-|12| Ask to join the PC's party|
+| d8 | Reaction                     |
+|----|------------------------------|
+| 1  | Flee then roll again.        |
+| 2  | Avoid the PCs entirely.      |
+| 3  | Trade with PCs.              |
+| 4  | Give the PCs aid.            |
+| 5  | Mistake the PCs for friends. |
+| 6  | Trick the PCs (roll again)   |
+| 7  | Call for Reinforcements.     |
+| 8  | Capture/Kill/Eat the PCs.    |
+
+</section>
+
+<section>
+
+## Leveling up
+
+PCs are awarded 1 experience point (XP) for each coin (c) worth of
+treasure recovered from remote, dangerous locations like dungeons and
+returned to civilization, split evenly between all PCs who
+assisted. If you are using a pre-made dungeon from another RPG that
+uses copper, silver, electrum, gold, and platinum coins, then convert
+the total to gold coins and gain that much XP.
+
+At certain XP thresholds, PCs gain a level, which adds 1 to three
+different ability scores. Do not reset XP to zero. The three scores
+can be picked by the player or chosen randomly. Each level also allows
+the player to reroll their PC’s HP maximum using one additional d6. If
+the rolled total is not greater than their last maximum, add 1 to the
+last maximum.
+
+| level | xp total | hp   | title    |
+|-------|----------|------|----------|
+| 1     | 0        | 1d6  | Wretch   |
+| 2     | 2000     | 2d6  | Lowlife  |
+| 3     | 4000     | 3d6  | Hoodlum  |
+| 4     | 8000     | 4d6  | Fool     |
+| 5     | 16000    | 5d6  | Dastard  |
+| 6     | 32,000   | 6d6  | Cad      |
+| 7     | 64,000   | 7d6  | Gadabout |
+| 8     | 125,000  | 8d6  | Rogue    |
+| 9     | 250,000  | 9d6  | Jack     |
+| 10    | 500,000  | 10d6 | Knave    |
 
 </section>
 
@@ -203,28 +274,28 @@ d10×100c in towns, d10×200c in cities. It also grants the PC XP equal
 to the amount spent. In the morning, succeed at a CON check or roll a
 mishap.
 
-|d20| mishap |
-|--|-----------------------------------|
-|1| You made a public fool of yourself.|
-|2| Take d3 direct damage from a fight.|
-|3| Pay d100c due to fines.|
-|4| You are engaged to be married.|
-|5| Lose d1000c from gambling.|
-|6| Groupies follow you everywhere.|
-|7| You’ve made an enemy.|
-|8| You have an ugly, prominent tattoo.|
-|9| Hangover: take -5 on all tests today.|
-|10| You joined a local faction.|
-|11| Robbed: Lose all remaining coin.|
-|12| You wake up in prison.|
-|13| The building is on fire!|
-|14| You’re expected to complete a mission due to your boasts.|
-|15| A duel is scheduled for the next dawn.|
-|16| You signed a shady contract.|
-|17| A stranger’s corpse is on the floor.|
-|18| A faction hates you (p. 50).|
-|19| All your belongings have been stolen.|
-|20| You meet a new companion who wants to join your party.|
+| d20 | mishap                                                    |
+|-----|-----------------------------------------------------------|
+| 1   | You made a public fool of yourself.                       |
+| 2   | Take d3 direct damage from a fight.                       |
+| 3   | Pay d100c due to fines.                                   |
+| 4   | You are engaged to be married.                            |
+| 5   | Lose d1000c from gambling.                                |
+| 6   | Groupies follow you everywhere.                           |
+| 7   | You’ve made an enemy.                                     |
+| 8   | You have an ugly, prominent tattoo.                       |
+| 9   | Hangover: take -5 on all tests today.                     |
+| 10  | You joined a local faction.                               |
+| 11  | Robbed: Lose all remaining coin.                          |
+| 12  | You wake up in prison.                                    |
+| 13  | The building is on fire!                                  |
+| 14  | You’re expected to complete a mission due to your boasts. |
+| 15  | A duel is scheduled for the next dawn.                    |
+| 16  | You signed a shady contract.                              |
+| 17  | A stranger’s corpse is on the floor.                      |
+| 18  | A faction hates you (p. 50).                              |
+| 19  | All your belongings have been stolen.                     |
+| 20  | You meet a new companion who wants to join your party.    |
 
 ### Gambling
 
