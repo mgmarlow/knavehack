@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Knave Second Edition quick reference">
+    <title>knavehack</title>
+    <link rel="icon" href="https://fav.farm/♞" />
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <style>
+      h1, h2, h3, h4, h5, h6 {
+          border: none;
+      }
+
+      section {
+          margin: 3rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>knavehack</h1>
+      <nav>
+        <a href="/">rules</a> /
+        <a href="/character">character</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <br />
+
+    <footer>
+      <hr />
+
+      knavehack
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "knavetools",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "lint": "yarn prettier --check _11ty/**/*.js .eleventy.js"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "prettier": "^3.3.2"
+  }
+}
