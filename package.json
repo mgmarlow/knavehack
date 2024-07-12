@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy",
-    "lint": "yarn prettier --check _11ty/**/*.js .eleventy.js"
+    "lint": "yarn prettier --check assets/js/**/*.js .eleventy.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",

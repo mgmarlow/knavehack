@@ -27,7 +27,7 @@ any of the following that you can carry: 3d6×10 coins, 2 rations, a
 arrows. If the PC has any points in `INT`, they may receive a random
 spell book for each point.
 
-TODO
+[career list](/assets/js/careers.json)
 
 ### 4. Record armor
 

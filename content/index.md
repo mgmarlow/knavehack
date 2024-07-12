@@ -2,11 +2,13 @@
 layout: "main.njk"
 ---
 
-A [Knave: Second
-Edition](https://questingbeast.itch.io/knave-second-edition) and
-[Black Hack](https://the-black-hack.jehaisleprintemps.net/english/)
-mashup. Knavehack is a simple, classless system. Your equipment
-defines your role.
+A mashup of [Knave: Second
+Edition](https://questingbeast.itch.io/knave-second-edition) and [The
+Black Hack](https://the-black-hack.jehaisleprintemps.net/english/).
+Knavehack is a simple, classless system that runs in the [OSR
+tradition](https://en.wikipedia.org/wiki/Old_School_Renaissance). Your
+equipment defines your role, your coins define your XP, and your
+improvisation defines your success.
 
 <section>
 
@@ -14,36 +16,46 @@ defines your role.
 
 ### Ability scores
 
-PCs have six abilities with scores rated from 0 to 10:
+Player characters (PCs) have six abilities with scores rated from 0 to
+10:
 
-1. Strength `STR`: power. Climbing, lifting, melee attacks.
+1. Strength `STR`: physical power, e.g. climbing, lifting, melee attacks.
 
-2. Dexterity `DEX`: agility. Dodging, sneaking, picking pockets,
-   sleight of hand, lockpicking.
+2. Dexterity `DEX`: agility, e.g. dodging, sneaking, picking pockets,
+   sleight of hand, lock-picking.
 
-3. Constitution `CON`: heartiness. Resist poison, cold, etc. PCs have
-   10 + `CON` item slots and can take 10 + `CON` wounds before dying.
+3. Constitution `CON`: heartiness, e.g. resist poison, cold, general
+   resilience. PCs have 10 + `CON` item slots and can take that many
+   wounds before dying.
 
-4. Intelligence `INT`: cunning. Alchemy, magic use. `INT` improves the
-   effectiveness of spells and PCs can cast `INT` spells per day.
+4. Intelligence `INT`: cunning, e.g. alchemy, magic use. `INT`
+   improves the effectiveness of spells and PCs can cast `INT` spells
+   per day.
 
-5. Wisdom `WIS`: perception. Ranged attacks, foraging, navigation,
-   spell resistance.
+5. Wisdom `WIS`: perception, e.g. ranged attacks, foraging,
+   navigation, spell resistance.
 
-6. Charisma `CHA`: personality. Persuasion, coercion. PCs can have a
-   number of companions and patron blessings equal to their `CHA`.
+6. Charisma `CHA`: personality, e.g. persuasion, coercion. PCs can
+   have a number of companions and patron blessings equal to their
+   `CHA`.
 
 ### Skill checks
 
-Roll a d20 + ability score + modifiers (in +5/-5 increments from
-advantages, disadvantages, and careers). If the total equals or
-exceeds 11 + the task’s difficulty (usually 5), then you
-succeed. Opposing ability scores and armor points can be used as a
-task’s difficulty. If a creature doesn’t have ability scores,
-substitute its level, half its level, or zero. GM’s call.
+Skill check = d20 + ability score + modifiers.
 
-PCs know all common knowledge and career-related knowledge. All other
-knowledge must be sought out.
+If the skill check is greater than the difficulty class (DC) the check
+succeeds. DC ranges from 11-21, where 16 is considered average
+difficulty.
+
+Modifiers are added or subtracted in increments of 5 and may consist
+of advantages, disadvantages, or other bonuses (like career choice).
+
+Opposing ability scores and armor points can be used as a task’s
+difficulty. If a creature doesn’t have ability scores, you may
+substitute its level.
+
+There are no knowledge checks! PCs know all common knowledge and
+career-related knowledge. All other knowledge must be sought out.
 
 </section>
 
@@ -51,7 +63,7 @@ knowledge must be sought out.
 
 ## Combat
 
-### Movement and distance
+### Movement, distance, and actions
 
 Knavehack uses 4 abstract ranges for measuring distances: **Close**,
 **Nearby**, **Far-Away** and **Distant**.
@@ -62,36 +74,38 @@ action and move somewhere **Far-Away** instead. Anything beyond
 **Far-Away** can be classified as **Distant** and would take 3 moves
 to get to.
 
+An action may consist of an attack, spellcast, maneuver, etc.
+
 |CLOSE|NEARBY|FAR AWAY|
 |-----|------|--------|
 |0 - 5ft|5 - 60ft|60 - 120ft|
 
 ### Initiative
 
-If initiative is not obvious (e.g. sneak attacks), flip a coin to
-determine who goes first. On a side’s turn, all of its creatures, in
-any order, may move and take one other action, such as an attack,
-spell casting, move, maneuver, etc.
+If initiative isn't obvious based on circumstances (e.g. a sneak
+attack), flip a coin. The winning side acts first, allowing each
+character of that side to take an action in any order. Sides then
+alternate until the end of the combat.
 
 ### Attacking
 
 Make a check using `STR` (for melee attacks) or `WIS` (for ranged
 attacks) vs. defender’s armor class `AC` (11 + armor points `AP`). On
 a 21+, the attacker may succeed at a free maneuver. On a natural 1,
-the weapon breaks. Careers never add bonuses to attacks or maneuvers.
+the weapon breaks. **Careers never add bonuses to attacks or
+maneuvers**.
 
-Ranged attacks cannot be made while in melee. If the target is in
-melee, the attack takes a -5 penalty.
+Ranged attacks cannot be made while in melee.
 
-Melee attacks against unsuspecting foes always hit and deal direct
-damage. Attacks against truly defenseless foes automatically kill
-them.
+Melee attacks against unsuspecting foes (sneak attacks) always hit and
+deal direct damage. Attacks against truly defenseless foes
+automatically kill them.
 
 #### Power attacks
 
 After a successful attack roll but before rolling for damage, PCs can
-decide to make a melee attack a power attack, which doubles the number
-of damage dice rolled but breaks the weapon.
+opt to make a melee attack a power attack, doubling the number of
+damage dice rolled but breaking the weapon.
 
 ### Maneuvers
 
@@ -99,8 +113,7 @@ Maneuvers include disarming, pushing, stunning, blinding, breaking
 gear, tripping, pickpocketing, climbing, restraining, or anything else
 the GM agrees is plausible. They can only cause damage indirectly
 (e.g., pushing an enemy off a ledge) and are resolved with an
-appropriate ability check. They can be critical for bringing down
-tough enemies.
+appropriate ability check.
 
 ### Damage and wounds
 
@@ -110,7 +123,7 @@ damage. If they are immune to that type, it deals no damage.
 
 Damage is subtracted from HP. At 0 HP, each point of damage “wounds”
 an item slot from highest to the lowest. Items in wounded slots are
-dropped.
+dropped and cannot be re-filled until the wound is healed.
 
 #### Direct damage
 
@@ -202,13 +215,9 @@ Falcons (1000c).
 
 ### Random encounters
 
-While dungeon delving, time is tracked in 10-minute segments called
-turns. Most actions (moving, searching, fighting, resting, etc.) take
-up one turn.
-
-The GM should roll a d4 every 15 minutes of real world play. A result
-of 1-2 means the players will encounter a randomly generated creature
-or distraction in the following turn.
+The GM rolls a d4 every 15 minutes of real world play. A result of 1-2
+means the players will encounter a randomly generated creature or
+distraction in the following turn.
 
 ### Creature reactions
 
@@ -235,18 +244,15 @@ creatures, make a Reaction roll on the following table:
 ## Leveling up
 
 PCs are awarded 1 experience point (XP) for each coin (c) worth of
-treasure recovered from remote, dangerous locations like dungeons and
-returned to civilization, split evenly between all PCs who
-assisted. If you are using a pre-made dungeon from another RPG that
-uses copper, silver, electrum, gold, and platinum coins, then convert
-the total to gold coins and gain that much XP.
+treasure recovered from dungeons and returned to civilization, split
+evenly between all PCs who assisted.
 
-At certain XP thresholds, PCs gain a level, which adds 1 to three
-different ability scores. Do not reset XP to zero. The three scores
-can be picked by the player or chosen randomly. Each level also allows
-the player to reroll their PC’s HP maximum using one additional d6. If
-the rolled total is not greater than their last maximum, add 1 to the
-last maximum.
+PCs gain a level when they hit an XP threshold detailed in the table
+below. When a PC levels up, they gain 1 point to three of their
+ability scores, randomly chosen or picked by the player. The PC also
+increases their maximum HP by d6.
+
+Don't reset XP to zero after leveling, Knavehack tracks total XP.
 
 | level | xp total | hp   | title    |
 |-------|----------|------|----------|
@@ -267,12 +273,17 @@ last maximum.
 
 ## Downtime activities
 
+In a safe haven, a PC may participate in downtime. They could carouse
+around the safe haven, increasing XP at the cost of coin and the
+occasional mishap. Or, they may simply wish to gamble their savings,
+train a new career, or create potions with alchemy.
+
 ### Carousing
 
 Carousing takes up a whole night and costs a PC d10×50c in villages,
 d10×100c in towns, d10×200c in cities. It also grants the PC XP equal
-to the amount spent. In the morning, succeed at a CON check or roll a
-mishap.
+to the amount spent. In the morning, succeed at a `CON` check or roll
+a mishap.
 
 | d20 | mishap                                                    |
 |-----|-----------------------------------------------------------|
@@ -327,36 +338,32 @@ checks (alchemist, lawyer, assassin, sculptor, folklorist, etc.).
 ### Alchemy
 
 Potions allow the drinker to produce a single significant magical
-effect. If the effect is ongoing (like invisibility), it lasts for one
-10-minute turn. Weak ongoing effects (like beast speech), may last for
-an hour or even a day if they are very weak. A drop of a potion gives
-a clue as to its effects. If the players find or buy a potion you can
-either use one of the examples to the right or generate something
-using the magic tables.
+effect. Potions with ongoing effects may last from a single 10-minute
+turn to several depending on the strength of the brew. The length of
+such potions is determined by the roll of a d6.
 
 Brewing a potion requires a fire, a cauldron, ingredients, and four
-hours (one watch) of time. The player describes the effect and
-duration of the potion they are trying to make, along with the
-ingredients to be used (usually monster parts, but in theory any rare
-substances with the right properties could be used). If the GM
-approves the effect, the PC makes an INT check. The PC adds +5 to the
-check if they spend an additional watch brewing. On a success, the
-potion is created. The parts are lost no matter the outcome. If the PC
-succeeds at the check by 10 or more, they have created a recipe for
-that potion and no longer need to make a brewing check to make it when
-using those exact ingredients.
+hours (one watch) of time. The player describes to the GM the desired
+effect of the potion and the ingredients used in its making. A minimum
+of 2 different ingredients must be used. The PC makes an `INT` check
+after the potion is approved by the GM. On success, the potion is
+created. Ingredients are lost no matter the outcome.
 
-Magical plants can be used for potions, but they usually grow in
+If the PC succeeds at brewing a potion by 10 or more, they manufacture
+the recipe for that potion. The potion no longer requires a brewing
+check so long as the same ingredients from the recipe are used.
+
+Magical plants may also be used for potions, but they usually grow in
 dangerous or lost locations. Most potions are made from the organs of
 monsters that give them their special abilities, such as a dragon's
 lung (fire breathing) or a dragon's scales (fireproofing). Harvesting
-a monster part requires one 10-minute turn and the proper
-tools. Harvested body parts or plants take up at least one slot, due
-to the packaging and fluids they must be preserved in.
+a monster part requires one 10-minute turn and the proper tools.
+Harvested body parts or plants take up at least one slot, due to the
+packaging and fluids they must be preserved in.
 
 </section>
 
-## Refereeing
+## GM additions
 
 ### Hazards
 
@@ -397,3 +404,11 @@ test once per battle if their leader passes a CHA check. Breaking
 points include after losing half their HP (if alone), after their
 first casualty, after half of their forces are lost, after their
 leader is killed, and after they are attacked by something they fear.
+
+### Converting modules
+
+#### Economy
+
+If you are using a pre-made dungeon from another RPG that uses copper,
+silver, electrum, gold, and platinum coins, convert the total to gold
+coins and gain that much XP.
