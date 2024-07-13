@@ -154,29 +154,6 @@ NPCs die at 0 HP.
 
 <section>
 
-## Spellcasting
-
-A spellbook takes up an item slot and contains a single spell.
-Spellbooks cannot be created or copied by PCs and must be found while
-exploring dungeons or stolen from other magic users.
-
-### Casting spells
-
-Casting a spell takes one action. Each spellbook can only be used once
-per day, but PCs can use a number of spellbooks per day equal to their
-`INT`.
-
-### Spell saves
-
-When a spell targets an unwilling creature with a level higher than
-the spell, they may make a check vs. the spell’s level.  On a success,
-the spell’s effect is halved. If they succeed by 10+, the effect is
-nullified.
-
-</section>
-
-<section>
-
 ## Inventory
 
 PCs have 10 + `CON` item slots. Most items, including groups of small
@@ -400,3 +377,40 @@ Harvested body parts or plants take up at least one slot, due to the
 packaging and fluids they must be preserved in.
 
 </section>
+
+<section>
+
+## Spellcasting
+
+A spellbook takes up an item slot and contains a single spell.
+Spellbooks cannot be created or copied by PCs and must be found while
+exploring dungeons or stolen from other magic users.
+
+### Casting spells
+
+Casting a spell takes one action. Each spellbook can only be used once
+per day, but PCs can use a number of spellbooks per day equal to their
+`INT`.
+
+### Spell saves
+
+When a spell targets an unwilling creature with a level higher than
+the spell, they may make a check vs. the spell’s level.  On a success,
+the spell’s effect is halved. If they succeed by 10+, the effect is
+nullified.
+
+### Spells
+
+Substitute `INT` with the caster's `INT` score. Unless otherwise
+noted, all spells with ongoing effects last up to `INT`×10 minutes,
+and have a range of up to 40 feet. If a spell directly affects another
+creature, the creature may make a save to avoid it.
+
+<ul>
+{% for spell in spells.spells %}
+  <li>{{ spell }}</li>
+{% endfor %}
+</ul>
+
+</section>
+
