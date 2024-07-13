@@ -406,11 +406,11 @@ noted, all spells with ongoing effects last up to `INT`×10 minutes,
 and have a range of up to 40 feet. If a spell directly affects another
 creature, the creature may make a save to avoid it.
 
-<ul>
+<ol>
 {% for spell in spells.spells %}
   <li>{{ spell }}</li>
 {% endfor %}
-</ul>
+</ol>
 
 </section>
 
