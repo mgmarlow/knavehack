@@ -7,7 +7,7 @@ Edition](https://questingbeast.itch.io/knave-second-edition) and [The
 Black Hack](https://the-black-hack.jehaisleprintemps.net/english/).
 Knavehack is a simple, classless system that runs in the [OSR
 tradition](https://en.wikipedia.org/wiki/Old_School_Renaissance). Your
-equipment defines your role, your coins define your XP, and your
+equipment defines your role, your loot defines your XP, and your
 improvisation defines your success.
 
 <section>
@@ -16,8 +16,7 @@ improvisation defines your success.
 
 ### Ability scores
 
-Player characters (PCs) have six abilities with scores rated from 0 to
-10:
+Player characters (PCs) have six ability scores, each rated from 0 to 10:
 
 1. Strength `STR`: physical power, e.g. climbing, lifting, melee attacks.
 
@@ -47,15 +46,18 @@ If the skill check is greater than the difficulty class (DC) the check
 succeeds. DC ranges from 11-21, where 16 is considered average
 difficulty.
 
-Modifiers are added or subtracted in increments of 5 and may consist
-of advantages, disadvantages, or other bonuses (like career choice).
+Modifiers are optional and are gained in increments of 5. Positive or
+negative modifiers correspond to advantages and disadvantages that the
+PC has in a certain situation. These may be due to combat maneuvers,
+character details (like career choice), or other factors decided on by
+the GM.
 
 Opposing ability scores and armor points can be used as a task’s
 difficulty. If a creature doesn’t have ability scores, you may
 substitute its level.
 
-There are no knowledge checks! PCs know all common knowledge and
-career-related knowledge. All other knowledge must be sought out.
+There are no knowledge checks! PCs know all common and career-related
+knowledge. All other knowledge must be sought out.
 
 </section>
 
@@ -87,13 +89,18 @@ attack), flip a coin. The winning side acts first, allowing each
 character of that side to take an action in any order. Sides then
 alternate until the end of the combat.
 
+### Armor Class
+
+Armor Class `AC` = 11 + Armor Points `AP`.
+
+`AP` is gained from equipment.
+
 ### Attacking
 
 Make a check using `STR` (for melee attacks) or `WIS` (for ranged
-attacks) vs. defender’s armor class `AC` (11 + armor points `AP`). On
-a 21+, the attacker may succeed at a free maneuver. On a natural 1,
-the weapon breaks. **Careers never add bonuses to attacks or
-maneuvers**.
+attacks) against the defender’s `AC` (11 + `AP`). On a 21+, the
+attacker may succeed at a free maneuver. On a natural 1, the weapon
+breaks. **Careers never add bonuses to attacks or maneuvers**.
 
 Ranged attacks cannot be made while in melee.
 
@@ -104,16 +111,17 @@ automatically kill them.
 #### Power attacks
 
 After a successful attack roll but before rolling for damage, PCs can
-opt to make a melee attack a power attack, doubling the number of
-damage dice rolled but breaking the weapon.
+opt to make a melee attack a Power Attack. Power Attacks double the
+number of damage dice rolled in exchange for breaking the weapon.
 
 ### Maneuvers
 
-Maneuvers include disarming, pushing, stunning, blinding, breaking
-gear, tripping, pickpocketing, climbing, restraining, or anything else
-the GM agrees is plausible. They can only cause damage indirectly
-(e.g., pushing an enemy off a ledge) and are resolved with an
-appropriate ability check.
+Maneuvers are tactical combat choices that exchange damage for
+utility. Possible maneuvers include disarming, pushing, stunning,
+blinding, breaking gear, tripping, pickpocketing, climbing,
+restraining, or anything else the GM agrees is plausible. They can
+only cause damage indirectly (e.g., pushing an enemy off a ledge) and
+are resolved with an appropriate ability check.
 
 ### Damage and wounds
 
@@ -148,9 +156,9 @@ NPCs die at 0 HP.
 
 ## Spellcasting
 
-A spellbook takes up an item slot and contains a single spell. They
-cannot be created or copied by PCs and must be found while exploring
-dungeons or stolen from other magic users.
+A spellbook takes up an item slot and contains a single spell.
+Spellbooks cannot be created or copied by PCs and must be found while
+exploring dungeons or stolen from other magic users.
 
 ### Casting spells
 
@@ -171,9 +179,9 @@ nullified.
 
 ## Inventory
 
-PCs have 10 + `CON` item slots to record their gear. Most items,
-including groups of small items that could fit in one hand, take up
-one slot. Two-handed items take two slots. 500 coins use a full slot.
+PCs have 10 + `CON` item slots. Most items, including groups of small
+items that could fit in one hand, take up one slot. Two-handed items
+take two slots. 500 coins use a full slot.
 
 ### Equipment
 
@@ -211,36 +219,6 @@ Falcons (1000c).
 
 <section>
 
-## Dungeon delving
-
-### Random encounters
-
-The GM rolls a d4 every 15 minutes of real world play. A result of 1-2
-means the players will encounter a randomly generated creature or
-distraction in the following turn.
-
-### Creature reactions
-
-Some monsters and NPCs will have predetermined personalities and goals
-that will guide a GM when choosing their actions and feelings towards
-the characters. Those that do not, such as randomly encountered
-creatures, make a Reaction roll on the following table:
-
-| d8 | Reaction                     |
-|----|------------------------------|
-| 1  | Flee then roll again.        |
-| 2  | Avoid the PCs entirely.      |
-| 3  | Trade with PCs.              |
-| 4  | Give the PCs aid.            |
-| 5  | Mistake the PCs for friends. |
-| 6  | Trick the PCs (roll again)   |
-| 7  | Call for Reinforcements.     |
-| 8  | Capture/Kill/Eat the PCs.    |
-
-</section>
-
-<section>
-
 ## Leveling up
 
 PCs are awarded 1 experience point (XP) for each coin (c) worth of
@@ -271,7 +249,67 @@ Don't reset XP to zero after leveling, Knavehack tracks total XP.
 
 <section>
 
-## Downtime activities
+## Adventure
+
+### Random encounters
+
+The GM rolls a d4 every 15 minutes of real world play. A result of 1-2
+means the players will encounter a randomly generated creature or
+distraction in the following turn.
+
+### Creature reactions
+
+Some monsters and NPCs will have predetermined personalities and goals
+that will guide a GM when choosing their actions and feelings towards
+the characters. Those that do not, such as randomly encountered
+creatures, make a Reaction roll on the following table:
+
+| d8 | Reaction                     |
+|----|------------------------------|
+| 1  | Flee then roll again.        |
+| 2  | Avoid the PCs entirely.      |
+| 3  | Trade with PCs.              |
+| 4  | Give the PCs aid.            |
+| 5  | Mistake the PCs for friends. |
+| 6  | Trick the PCs (roll again)   |
+| 7  | Call for Reinforcements.     |
+| 8  | Capture/Kill/Eat the PCs.    |
+
+### Hazards and statuses
+
+**fire**: 1d6 direct damage per round. On fire: 2d6 direct damage per
+round. Immersed in lava: instant death.
+
+**drowning**: PCs can hold their breath for 30 seconds + 30 seconds
+for each point of `CON`. After this, they pass out and must pass a
+`CON` check every round or die.
+
+**freezing**: 1 direct damage per 10-minute turn unless the PC passes
+a `CON` check.
+
+**lightning**: 3d6 direct damage. falling: 1d6 direct damage per 10’
+fallen. If at least three of the dice roll a 6, the PC is instantly
+killed.
+
+**thirst**: Each day without drinking water applies a -5 penalty to
+all checks. After three days, pass a `CON` check every day or die.
+Assume that the PCs are finding water to drink as they travel, unless
+they are in a very arid environment.
+
+**sleep deprivation**: For each day without sleep, apply -5 to all
+checks. After two days, make a `WIS` check every watch or pass out for
+three watches.
+
+**intoxication**: Make a `CON` check every hour that a PC drinks
+alcohol. If they fail, they become drunk and take -5 to all checks
+until the next day. If a creature fails the `CON` check two hours in a
+row, they pass out for two watches (8 hours).
+
+</section>
+
+<section>
+
+## Downtime
 
 In a safe haven, a PC may participate in downtime. They could carouse
 around the safe haven, increasing XP at the cost of coin and the
@@ -362,53 +400,3 @@ Harvested body parts or plants take up at least one slot, due to the
 packaging and fluids they must be preserved in.
 
 </section>
-
-## GM additions
-
-### Hazards
-
-**fire**: 1d6 direct damage per round. On fire: 2d6 direct damage per
-round. Immersed in lava: instant death.
-
-**drowning**: PCs can hold their breath for 30 seconds + 30 seconds for
-each point of CON. After this, they pass out and must pass a CON check
-every round or die.
-
-**freezing**: 1 direct damage per 10-minute turn unless the PC passes
-a CON check.
-
-**lightning**: 3d6 direct damage. falling: 1d6 direct damage per 10’
-fallen. If at least three of the dice roll a 6, the PC is instantly
-killed.
-
-**thirst**: Each day without drinking water applies a -5 penalty to
-all checks. After three days, pass a CON check every day or
-die. Assume that the PCs are finding water to drink as they travel,
-unless they are in a very arid environment.
-
-**sleep deprivation**: For each day without sleep, apply -5 to all
-checks. After two days, make a WIS check every watch or pass out for
-three watches.
-
-**intoxication**: Make a CON check every hour that a PC drinks
-alcohol. If they fail, they become drunk and take -5 to all checks
-until the next day. If a creature fails the CON check two hours in a
-row, they pass out for two watches (8 hours).
-
-### Monster morale
-
-When NPCs reach a breaking point during a battle, they must test their
-morale by rolling equal to or under their morale rating on 2d6. If
-they roll over it, they rout or surrender. They may reroll a failed
-test once per battle if their leader passes a CHA check. Breaking
-points include after losing half their HP (if alone), after their
-first casualty, after half of their forces are lost, after their
-leader is killed, and after they are attacked by something they fear.
-
-### Converting modules
-
-#### Economy
-
-If you are using a pre-made dungeon from another RPG that uses copper,
-silver, electrum, gold, and platinum coins, convert the total to gold
-coins and gain that much XP.
