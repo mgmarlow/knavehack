@@ -156,7 +156,7 @@ NPCs die at 0 HP.
 
 ## Inventory
 
-PCs have 10 + `CON` item slots. Most items, including groups of small
+PCs have 11 + `CON` item slots. Most items, including groups of small
 items that could fit in one hand, take up one slot. Two-handed items
 take two slots. 500 coins use a full slot.
 
