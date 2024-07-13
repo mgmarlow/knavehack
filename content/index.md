@@ -399,7 +399,9 @@ the spell, they may make a check vs. the spell’s level.  On a success,
 the spell’s effect is halved. If they succeed by 10+, the effect is
 nullified.
 
-### Spells
+### 99 Spells
+
+> Feel free to bring your own spells. Here are 99 from Knave 1e.
 
 Substitute `INT` with the caster's `INT` score. Unless otherwise
 noted, all spells with ongoing effects last up to `INT`×10 minutes,
