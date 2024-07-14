@@ -399,20 +399,19 @@ the spell, they may make a check vs. the spell’s level.  On a success,
 the spell’s effect is halved. If they succeed by 10+, the effect is
 nullified.
 
-### 99 Spells
+### Spell generator
 
-> Feel free to bring your own spells. Here are 99 from Knave 1e.
+> Feel free to bring your own spells. This button generates a random
+> one from Knave 1e.
 
 Substitute `INT` with the caster's `INT` score. Unless otherwise
 noted, all spells with ongoing effects last up to `INT`×10 minutes,
 and have a range of up to 40 feet. If a spell directly affects another
 creature, the creature may make a save to avoid it.
 
-<ol>
-{% for spell in spells.spells %}
-  <li>{{ spell }}</li>
-{% endfor %}
-</ol>
+<button onclick="randomSpell()">spell me</button>
+
+<p id="spell"></p>
 
 </section>
 

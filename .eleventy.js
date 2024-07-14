@@ -1,5 +1,16 @@
+const esbuild = require("esbuild");
+
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addWatchTarget("assets/js/");
+
+  eleventyConfig.on("afterBuild", () => {
+    return esbuild.build({
+      entryPoints: ["assets/js/application.js"],
+      outdir: "_site/assets/js/",
+      minify: process.env.ELEVENTY_ENV === "production",
+      bundle: true
+    });
+  });
 
   return {
     templateFormats: ["md", "njk", "html"],
