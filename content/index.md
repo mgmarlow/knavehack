@@ -192,6 +192,12 @@ Falcons (1000c).
 **clothing sets**: Poor (60c), Humble (120c), Respectable (240c), Wealthy
 (600c), Minor Noble (2400c), Major Noble (12,000c), Royal (120,000c).
 
+### Magic items
+
+Magic weapons typically add +1 to any attribute being tested whilst
+using the weapon and +1 to each damage dice rolled. More powerful
+weapons (+2/3) can be found if the GM includes them.
+
 </section>
 
 <section>
