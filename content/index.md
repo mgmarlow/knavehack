@@ -35,8 +35,7 @@ Player characters (PCs) have six ability scores, each rated from 0 to 10:
    navigation, spell resistance.
 
 6. Charisma `CHA`: personality, e.g. persuasion, coercion. PCs can
-   have a number of companions and patron blessings equal to their
-   `CHA`.
+   have a number of companions equal to their `CHA`.
 
 ### Skill checks
 
