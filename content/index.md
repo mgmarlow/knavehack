@@ -150,6 +150,36 @@ wound.
 PCs die when all of their slots are filled with wounds. Monsters and
 NPCs die at 0 HP.
 
+### Hazards and statuses
+
+**fire**: 1d6 direct damage per round. On fire: 2d6 direct damage per
+round. Immersed in lava: instant death.
+
+**drowning**: PCs can hold their breath for 30 seconds + 30 seconds
+for each point of `CON`. After this, they pass out and must pass a
+`CON` check every round or die.
+
+**freezing**: 1 direct damage per 10-minute turn unless the PC passes
+a `CON` check.
+
+**lightning**: 3d6 direct damage. falling: 1d6 direct damage per 10’
+fallen. If at least three of the dice roll a 6, the PC is instantly
+killed.
+
+**thirst**: Each day without drinking water applies a -5 penalty to
+all checks. After three days, pass a `CON` check every day or die.
+Assume that the PCs are finding water to drink as they travel, unless
+they are in a very arid environment.
+
+**sleep deprivation**: For each day without sleep, apply -5 to all
+checks. After two days, make a `WIS` check every watch or pass out for
+three watches.
+
+**intoxication**: Make a `CON` check every hour that a PC drinks
+alcohol. If they fail, they become drunk and take -5 to all checks
+until the next day. If a creature fails the `CON` check two hours in a
+row, they pass out for two watches (8 hours).
+
 </section>
 
 <section>
@@ -269,7 +299,7 @@ Don't reset XP to zero after leveling, Knavehack tracks total XP.
 
 <section>
 
-## Adventure
+## Dungeon adventure
 
 ### Time and turns
 
@@ -300,35 +330,38 @@ creatures, make a Reaction roll on the following table:
 | 9-11 | Indifferent, may negotiate. |
 | 12   | Eager, friendly             |
 
-### Hazards and statuses
+</section>
 
-**fire**: 1d6 direct damage per round. On fire: 2d6 direct damage per
-round. Immersed in lava: instant death.
+<section>
 
-**drowning**: PCs can hold their breath for 30 seconds + 30 seconds
-for each point of `CON`. After this, they pass out and must pass a
-`CON` check every round or die.
+## Wilderness adventure
 
-**freezing**: 1 direct damage per 10-minute turn unless the PC passes
-a `CON` check.
+### Traveling
 
-**lightning**: 3d6 direct damage. falling: 1d6 direct damage per 10’
-fallen. If at least three of the dice roll a 6, the PC is instantly
-killed.
+While traveling, days are divided into 6; four-hour watches: three for
+day, three for night. Most major actions (traveling, foraging,
+searching, etc. take one watch to complete).
 
-**thirst**: Each day without drinking water applies a -5 penalty to
-all checks. After three days, pass a `CON` check every day or die.
-Assume that the PCs are finding water to drink as they travel, unless
-they are in a very arid environment.
+PCs can move one six-mile hex per watch, up to three times per day.
+Each watch they travel after the third deals 1 direct damage to each
+PC unless they succeed at a CON check. Speed is halved in darkness,
+difficult terrain, or severe weather and doubled when riding.
 
-**sleep deprivation**: For each day without sleep, apply -5 to all
-checks. After two days, make a `WIS` check every watch or pass out for
-three watches.
+### Navigation and exploration
 
-**intoxication**: Make a `CON` check every hour that a PC drinks
-alcohol. If they fail, they become drunk and take -5 to all checks
-until the next day. If a creature fails the `CON` check two hours in a
-row, they pass out for two watches (8 hours).
+If the terrain or weather while traveling is disorienting, the GM may
+require a `WIS` check of the party’s leader (which the GM rolls in
+secret) to see if they move to a random adjacent hex.
+
+The party can spend a watch exploring the area of a six-mile hex to
+reveal any areas of interest (such as an overgrown ruin, hidden pool,
+etc.) that wouldn’t be noticed by passing through.
+
+### Foraging
+
+Finding food takes a watch and requires passing a `WIS` check, with
+modifiers for weather, terrain, etc. On a success, a PC collects d6
+rations.
 
 </section>
 
