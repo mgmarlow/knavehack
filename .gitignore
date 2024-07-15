@@ -1,3 +1,7 @@
 node_modules/
 _site/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
 
