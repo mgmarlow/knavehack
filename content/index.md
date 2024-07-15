@@ -65,7 +65,7 @@ knowledge. All other knowledge must be sought out.
 
 ## Combat
 
-### Movement, distance, and actions
+### Movement and distance
 
 Knavehack uses 4 abstract ranges for measuring distances: **Close**,
 **Nearby**, **Far-Away** and **Distant**.
@@ -76,18 +76,17 @@ action and move somewhere **Far-Away** instead. Anything beyond
 **Far-Away** can be classified as **Distant** and would take 3 moves
 to get to.
 
-An action may consist of an attack, spellcast, maneuver, etc.
-
 |CLOSE|NEARBY|FAR AWAY|
 |-----|------|--------|
 |0 - 5ft|5 - 60ft|60 - 120ft|
 
 ### Initiative
 
-If initiative isn't obvious based on circumstances (e.g. a sneak
-attack), flip a coin. The winning side acts first, allowing each
-character of that side to take an action in any order. Sides then
-alternate until the end of the combat.
+Initiative is determined via a `CHA` vs. `CHA` check between the two
+leaders of each side. The leader is the party member closest to the
+confrontation. When a side acts, all its creatures, in any order, may
+move (up to Nearby) and take one other action such as attacking,
+casting a spell, moving, maneuvering, etc
 
 ### Armor Class
 
@@ -98,9 +97,11 @@ Armor Class `AC` = 11 + Armor Points `AP`.
 ### Attacking
 
 Make a check using `STR` (for melee attacks) or `WIS` (for ranged
-attacks) against the defender’s `AC` (11 + `AP`). On a 21+, the
-attacker may succeed at a free maneuver. On a natural 1, the weapon
-breaks. **Careers never add bonuses to attacks or maneuvers**.
+attacks) against the defender’s `AC` (11 + `AP`). If the check
+succeeds, the attack is successful and damage is rolled. On a 21+, the
+attacker may additionally succeed at a free maneuver. On a natural 1,
+the weapon breaks. **Careers never add bonuses to attacks or
+maneuvers**.
 
 Ranged attacks cannot be made while in melee.
 
@@ -196,6 +197,43 @@ Falcons (1000c).
 
 <section>
 
+## Spellcasting
+
+A spellbook takes up an item slot and contains a single spell.
+Spellbooks cannot be created or copied by PCs and must be found while
+exploring dungeons or stolen from other magic users.
+
+### Casting spells
+
+Casting a spell takes one action. Each spellbook can only be used once
+per day, but PCs can use a number of spellbooks per day equal to their
+`INT`.
+
+### Spell saves
+
+When a spell targets an unwilling creature with a level higher than
+the spell, they may make a check vs. the spell’s level.  On a success,
+the spell’s effect is halved. If they succeed by 10+, the effect is
+nullified.
+
+### Spell generator
+
+> Feel free to bring your own spells. This button generates a random
+> one from Knave 1e.
+
+Substitute `INT` with the caster's `INT` score. Unless otherwise
+noted, all spells with ongoing effects last up to `INT`×10 minutes,
+and have a range of up to 40 feet. If a spell directly affects another
+creature, the creature may make a save to avoid it.
+
+<button onclick="randomSpell()">spell me</button>
+
+<p id="spell"></p>
+
+</section>
+
+<section>
+
 ## Leveling up
 
 PCs are awarded 1 experience point (XP) for each coin (c) worth of
@@ -228,6 +266,14 @@ Don't reset XP to zero after leveling, Knavehack tracks total XP.
 
 ## Adventure
 
+### Time and turns
+
+Time in the dungeon is measured in **game turns** that approximate to
+10 minutes. When combat begins, the time scale changes to **combat
+rounds**, which are about 10 seconds long.
+
+PCs automatically detect traps and map their environment.
+
 ### Random encounters
 
 The GM rolls a d4 every 15 minutes of real world play. A result of 1-2
@@ -241,16 +287,13 @@ that will guide a GM when choosing their actions and feelings towards
 the characters. Those that do not, such as randomly encountered
 creatures, make a Reaction roll on the following table:
 
-| d8 | Reaction                     |
-|----|------------------------------|
-| 1  | Flee then roll again.        |
-| 2  | Avoid the PCs entirely.      |
-| 3  | Trade with PCs.              |
-| 4  | Give the PCs aid.            |
-| 5  | Mistake the PCs for friends. |
-| 6  | Trick the PCs (roll again)   |
-| 7  | Call for Reinforcements.     |
-| 8  | Capture/Kill/Eat the PCs.    |
+| d12  | Reaction                    |
+|------|-----------------------------|
+| 1-2  | Attacks.                    |
+| 3-5  | Hostile, may attack.        |
+| 6-8  | Uncertain, confused.        |
+| 9-11 | Indifferent, may negotiate. |
+| 12   | Eager, friendly             |
 
 ### Hazards and statuses
 
@@ -378,40 +421,5 @@ packaging and fluids they must be preserved in.
 
 </section>
 
-<section>
 
-## Spellcasting
-
-A spellbook takes up an item slot and contains a single spell.
-Spellbooks cannot be created or copied by PCs and must be found while
-exploring dungeons or stolen from other magic users.
-
-### Casting spells
-
-Casting a spell takes one action. Each spellbook can only be used once
-per day, but PCs can use a number of spellbooks per day equal to their
-`INT`.
-
-### Spell saves
-
-When a spell targets an unwilling creature with a level higher than
-the spell, they may make a check vs. the spell’s level.  On a success,
-the spell’s effect is halved. If they succeed by 10+, the effect is
-nullified.
-
-### Spell generator
-
-> Feel free to bring your own spells. This button generates a random
-> one from Knave 1e.
-
-Substitute `INT` with the caster's `INT` score. Unless otherwise
-noted, all spells with ongoing effects last up to `INT`×10 minutes,
-and have a range of up to 40 feet. If a spell directly affects another
-creature, the creature may make a save to avoid it.
-
-<button onclick="randomSpell()">spell me</button>
-
-<p id="spell"></p>
-
-</section>
 

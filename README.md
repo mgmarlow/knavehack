@@ -11,3 +11,11 @@ improvisation defines your success.
 Licensed by the [Open Gaming
 License](https://opengamingfoundation.org/ogl.html) (see
 [LICENSE](/LICENSE)), the text and tables are open game content.
+
+## Kudos
+
+- [Knave: Second
+Edition](https://questingbeast.itch.io/knave-second-edition)
+- [The Black
+Hack](https://the-black-hack.jehaisleprintemps.net/english/)
+- [Basic Fantasy](https://www.basicfantasy.org/index.html)
