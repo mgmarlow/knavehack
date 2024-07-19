@@ -162,9 +162,10 @@ for each point of `CON`. After this, they pass out and must pass a
 **freezing**: 1 direct damage per 10-minute turn unless the PC passes
 a `CON` check.
 
-**lightning**: 3d6 direct damage. falling: 1d6 direct damage per 10’
-fallen. If at least three of the dice roll a 6, the PC is instantly
-killed.
+**lightning**: 3d6 direct damage.
+
+**falling**: 1d6 direct damage per 10’ fallen. If at least three of the
+dice roll a 6, the PC is instantly killed.
 
 **thirst**: Each day without drinking water applies a -5 penalty to
 all checks. After three days, pass a `CON` check every day or die.
@@ -344,7 +345,7 @@ searching, etc. take one watch to complete).
 
 PCs can move one six-mile hex per watch, up to three times per day.
 Each watch they travel after the third deals 1 direct damage to each
-PC unless they succeed at a CON check. Speed is halved in darkness,
+PC unless they succeed at a `CON` check. Speed is halved in darkness,
 difficult terrain, or severe weather and doubled when riding.
 
 ### Navigation and exploration
