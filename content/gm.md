@@ -26,7 +26,7 @@ Use this table to fill each room of a dungeon:
   checks.
 - ATK: number/type of attacks in one round. Monsters armed with
   weapons typically deal d6 damage.
-- MVT: slow/normal/fast/flying. A normal MVT (default) allows monsters
+- MOV: slow/normal/fast/flying. A normal MOV (default) allows monsters
   to move Nearby just like PCs.
 - MRL: how likely the monster is to flee/surrender during combat.
 - NA: how many monsters are encountered together. X/Y where X is the
