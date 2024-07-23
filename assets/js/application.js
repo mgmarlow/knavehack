@@ -1,34 +1,31 @@
+import Alpine from "alpinejs";
 import { spells, careers } from "../../_data/data.json";
 
 const randomInt = (upper) => {
   return Math.floor(Math.random() * upper);
 };
 
-const randomTable = (table) => {
-  const idx = randomInt(table.length);
-  return table[idx];
-}
+Alpine.data("table", (kind) => ({
+  data: [],
+  selected: "",
+  init() {
+    switch (kind) {
+      case "spells":
+        this.data = spells;
+        break;
+      case "careers":
+        this.data = careers;
+        break;
+      default:
+        throw new Error("invalid table kind");
+    }
 
-const rollCareers = () => {
-  const first = randomInt(100);
-  let second = randomInt(100);
+    this.roll();
+  },
+  roll() {
+    const idx = randomInt(this.data.length);
+    this.selected = this.data[idx];
+  },
+}));
 
-  while (second == first) {
-    second = randomInt(100);
-  }
-
-  return [careers[first], careers[second]];
-};
-
-const onNewCareersClick = () => {
-  const newCareers = rollCareers();
-
-  document.getElementById("careers").innerHTML =
-    `<li>${newCareers[0]}</li><li>${newCareers[1]}</li>`;
-};
-
-globalThis.onNewCareersClick = onNewCareersClick;
-globalThis.randomSpell = () => {
-  const spell = randomTable(spells);
-  document.getElementById("spell").textContent = spell;
-};
+Alpine.start();

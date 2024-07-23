@@ -262,9 +262,7 @@ noted, all spells with ongoing effects last up to `INT`×10 minutes,
 and have a range of up to 40 feet. If a spell directly affects another
 creature, the creature may make a save to avoid it.
 
-<button onclick="randomSpell()">spell me</button>
-
-<p id="spell"></p>
+{% tableroll "spells" %}
 
 </section>
 

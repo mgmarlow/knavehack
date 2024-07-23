@@ -1,4 +1,5 @@
 const esbuild = require("esbuild");
+const tableroll = require("./_11ty/shortcodes/tableroll");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("assets/js/");
@@ -11,6 +12,8 @@ module.exports = function (eleventyConfig) {
       bundle: true
     });
   });
+
+  eleventyConfig.addNunjucksShortcode("tableroll", tableroll);
 
   return {
     templateFormats: ["md", "njk", "html"],
