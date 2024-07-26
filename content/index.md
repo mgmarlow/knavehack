@@ -298,11 +298,23 @@ rounds**, which are about 10 seconds long.
 
 PCs automatically detect traps and map their environment.
 
+### Resource expenditure
+
+Resources (like torches) have lifetimes measured in ticks. For
+example, a torch might have 12 ticks, roughly 2 hours of in-game time.
+A lantern full of oil might have 36.
+
+At the end of each game turn, record a tick. When a resource has
+reached its maximum ticks, that resource is exhausted (e.g.
+extinguished).
+
 ### Random encounters
 
-The GM rolls a d4 every 15 minutes of real world play. A result of 1-2
-means the players will encounter a randomly generated creature or
-distraction in the following turn.
+After each game turn, roll a d8. A 1 result means the players
+encounter a randomly generated creature or distraction in the
+following turn.
+
+That encounter appears 2d6 x 10 ft. away from the players.
 
 ### Creature reactions
 
