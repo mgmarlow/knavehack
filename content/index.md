@@ -49,7 +49,9 @@ difficulty.
   or negative modifiers correspond to advantages and disadvantages to
   a particular situation (career choice, combat modifiers, etc.).
   Career choice does not influence attack rolls.
+
 - There are no knowledge checks.
+
 - Opposing ability scores or armor points from a monster/NPC may be
   used as DC.
 
@@ -95,9 +97,13 @@ attacks) against the defender’s armor class. If the check succeeds,
 the attack is successful and damage is rolled.
 
 - On a 21+, the attacker may additionally succeed at a free maneuver.
+
 - On a natural 1, the weapon breaks.
+
 - **Careers never add bonuses to attacks or maneuvers**.
+
 - Ranged attacks cannot be made while in melee.
+
 - Melee attacks against unsuspecting foes always hit and deal direct
   damage.
 
