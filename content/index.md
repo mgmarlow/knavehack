@@ -2,7 +2,9 @@
 layout: "main.njk"
 ---
 
-A mashup of [Knave: Second
+# Rules
+
+**Knavehack** is a mashup of [Knave: Second
 Edition](https://questingbeast.itch.io/knave-second-edition) and [The
 Black Hack](https://the-black-hack.jehaisleprintemps.net/english/).
 Knavehack is a simple, classless system that runs in the [OSR

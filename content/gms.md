@@ -2,9 +2,9 @@
 layout: "main.njk"
 ---
 
-## GM notes
+# For GMs
 
-### Stocking dungeons
+## Stocking dungeons
 
 Use this table to fill each room of a dungeon:
 
@@ -18,7 +18,7 @@ Use this table to fill each room of a dungeon:
 | 89-96 | trap                  |
 | 97-00 | trap with treasure    |
 
-### Monster stat breakdown
+## Monster stat breakdown
 
 - AC: target number necessary to hit the monster.
 - HD: # of hit dice. Monsters always roll d8s for hit points, unless
@@ -40,7 +40,7 @@ e.g.
 bandit: AC 13, HD 1, ATK d6, MRL 8, NA: d8/3d10. Likes to ambush.
 ```
 
-#### Morale
+### Morale
 
 When NPCs reach a breaking point during a battle, they must test their
 morale by rolling equal to or under their morale rating on 2d6. If
@@ -50,9 +50,9 @@ points include after losing half their HP (if alone), after their
 first casualty, after half of their forces are lost, after their
 leader is killed, and after they are attacked by something they fear.
 
-### Converting modules
+## Converting modules
 
-#### Economy
+### Economy
 
 If you are using a pre-made dungeon from another RPG that uses copper,
 silver, electrum, gold, and platinum coins, convert the total to gold
