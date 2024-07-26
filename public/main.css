@@ -1,0 +1,37 @@
+.two-column {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 4rem;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.toc ul li {
+    padding: 0;
+}
+
+.toc ul li:last-child {
+    margin-bottom: 0.5rem;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+footer {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .toc {
+        display: none;
+    }
+
+    .two-column {
+        display: block;
+    }
+}

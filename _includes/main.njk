@@ -6,40 +6,42 @@
     <meta name="description" content="knavehack ttrpg">
     <title>knavehack</title>
     <link rel="icon" href="https://fav.farm/♞" />
-    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    <style>
-      h1, h2, h3, h4, h5, h6 {
-          border: none;
-      }
-
-      section {
-          margin: 3rem 0;
-      }
-    </style>
+    <link rel="stylesheet" href="/public/pico.min.css">
+    <link rel="stylesheet" href="/public/main.css">
   </head>
   <body>
-    <header>
-      <h1>knavehack</h1>
-      <nav>
-        <a href="/">rules</a> /
-        <a href="/character">characters</a> /
-        <a href="/gm">GMs</a> /
-        <a href="https://github.com/mgmarlow/knavehack">github</a>
-      </nav>
-    </header>
+    <div class="container">
+      <header>
+        <h1>knavehack</h1>
+        <div>
+          <a href="/">rules</a> /
+          <a href="/character">characters</a> /
+          <a href="/gm">GMs</a> /
+          <a href="https://github.com/mgmarlow/knavehack">github</a>
+        </div>
+        <hr />
+      </header>
 
-    <main>
-      {{ content | safe }}
-    </main>
+      <br />
 
-    <br />
+      <div class="two-column">
+        <aside>
+          {{ content | toc | safe }}
+        </aside>
 
-    <footer>
-      <hr />
+        <main>
+          {{ content | safe }}
+        </main>
+      </div>
 
-      knavehack - <a href="https://github.com/mgmarlow/knavehack/blob/main/LICENSE">open game license</a>
-    </footer>
+      <br />
+
+      <footer>
+        <hr />
+
+        knavehack - <a href="https://github.com/mgmarlow/knavehack/blob/main/LICENSE">open game license</a>
+      </footer>
+    </div>
     <script src="/assets/js/application.js"></script>
   </body>
 </html>
