@@ -10,9 +10,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on("afterBuild", () => {
     const result = sass.compile("assets/sass/main.scss", {
       style: "compressed",
-      loadPaths: ["node_modules"]
+      loadPaths: ["node_modules"],
     });
 
+    fs.mkdirSync("_site/assets/css", { recursive: true });
     return fs.writeFileSync("_site/assets/css/main.css", result.css);
   });
 
