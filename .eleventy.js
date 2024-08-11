@@ -1,18 +1,10 @@
 const esbuild = require("esbuild");
 const fs = require("node:fs");
 const sass = require("sass");
-const markdownItAnchor = require("markdown-it-anchor");
-const pluginTOC = require("eleventy-plugin-toc");
 const tableroll = require("./_11ty/shortcodes/tableroll");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.amendLibrary("md", (lib) => lib.use(markdownItAnchor));
   eleventyConfig.addWatchTarget("assets/");
-
-  eleventyConfig.addPlugin(pluginTOC, {
-    ul: true,
-  });
-
   eleventyConfig.addPassthroughCopy("public");
 
   eleventyConfig.on("afterBuild", () => {

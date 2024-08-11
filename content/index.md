@@ -233,7 +233,7 @@ NPCs die at 0 HP.
   alcohol. If they fail, they become drunk and take -5 to all checks
   until the next day. If a creature fails the `CON` check two hours in
   a row, they pass out for two watches (8 hours).
-  
+
 ---
 
 ## Inventory
