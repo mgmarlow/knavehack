@@ -5,63 +5,61 @@ layout: "main.njk"
 # Rules
 
 **Knavehack** is a mashup of [Knave: Second
-Edition](https://questingbeast.itch.io/knave-second-edition) and [The
-Black Hack](https://the-black-hack.jehaisleprintemps.net/english/).
-Knavehack is a simple, classless system that runs in the [OSR
-tradition](https://en.wikipedia.org/wiki/Old_School_Renaissance). Your
-equipment defines your role, your loot defines your XP, and your
-improvisation defines your success.
+Edition](https://questingbeast.itch.io/knave-second-edition) and a few
+other [OSR
+systems](https://en.wikipedia.org/wiki/Old_School_Renaissance). It's
+designed to be quick, simple, and classless. Your equipment defines
+your role, your loot defines your XP, and your improvisation defines
+your success.
 
 ## Ability scores
 
 Player characters (PCs) have six ability scores, each rated from 0 to 10:
 
-1. Strength `STR`: physical power, e.g. climbing, lifting, melee attacks.
+1. `STR`: physical power, e.g. climbing, lifting, melee attacks.
 
-2. Dexterity `DEX`: agility, e.g. dodging, sneaking, picking pockets,
-   sleight of hand, lock-picking.
+2. `DEX`: agility, e.g. dodging, sneaking, picking pockets, sleight of
+   hand, lock-picking.
 
-3. Constitution `CON`: heartiness, e.g. resist poison, cold, general
-   resilience. PCs have 10 + `CON` item slots and can take that many
-   wounds before dying.
+3. `CON`: heartiness, e.g. resist poison, cold, general resilience.
+   PCs have 10 + `CON` item slots and can take that many wounds before
+   dying.
 
-4. Intelligence `INT`: cunning, e.g. alchemy, magic use. `INT`
-   improves the effectiveness of spells and PCs can cast `INT` spells
-   per day.
+4. `INT`: cunning, e.g. alchemy, magic use. `INT` improves the
+   effectiveness of spells and PCs can cast `INT` spells per day.
 
-5. Wisdom `WIS`: perception, e.g. ranged attacks, foraging,
-   navigation, spell resistance.
+5. `WIS`: perception, e.g. ranged attacks, foraging, navigation, spell
+   resistance.
 
-6. Charisma `CHA`: personality, e.g. persuasion, coercion. PCs can
-   have a number of companions equal to their `CHA`.
+6. `CHA`: personality, e.g. persuasion, coercion. PCs can have a
+   number of companions equal to their `CHA`.
 
-View [players](/players) character-building instructions.
+[Create a character](/players)
 
 ## Skill checks
 
 ```
-d20 + ability score + modifiers
+success = d20 + ability score + modifiers > DC
 ```
+
+Roll a d20, adding the ability score relevant for the check and any
+optional modifiers.
 
 If the skill check is greater than the difficulty class (DC) the check
 succeeds. DC ranges from 11-21, where 16 is considered average
 difficulty.
 
-- Modifiers are optional, and are gained in increments of 5. Positive
-  or negative modifiers correspond to advantages and disadvantages to
-  a particular situation (career choice, combat modifiers, etc.).
-  Career choice does not influence attack rolls.
+- Modifiers are gained/lost in increments of 5.
 
 - There are no knowledge checks.
 
-- Opposing ability scores or armor points from a monster/NPC may be
-  used as DC.
+- Opposing HD from a monster/NPC may be used as DC.
 
 ## Combat
 
 ### Movement and distance
 
-Knavehack uses 4 abstract ranges for measuring distances: **Close**,
+There are 4 abstract ranges for measuring distances: **Close**,
 **Nearby**, **Far-Away** and **Distant**.
 
 A character can move somewhere **Nearby** as part of an action,
@@ -85,7 +83,7 @@ casting a spell, moving, maneuvering, etc
 ### Armor Class
 
 ```
-armor class = 11 + armor points
+AC = 11 + armor points
 ```
 
 Armor class represents combat resilience, in the form of armor
@@ -93,6 +91,12 @@ absorbing a blow, influencing a dodge, or otherwise avoiding damage.
 Armor points are gained from equipment.
 
 ### Attacking
+
+```
+melee = d20 + STR > AC
+
+ranged = d20 + WIS > AC
+```
 
 Make a check using `STR` (for melee attacks) or `WIS` (for ranged
 attacks) against the defender’s armor class. If the check succeeds,
@@ -109,12 +113,6 @@ the attack is successful and damage is rolled.
 - Melee attacks against unsuspecting foes always hit and deal direct
   damage.
 
-#### Power attacks
-
-After a successful attack roll but before rolling for damage, PCs can
-opt to make a melee attack a Power Attack. Power Attacks double the
-number of damage dice rolled in exchange for breaking the weapon.
-
 #### Maneuvers
 
 Maneuvers are tactical combat choices that exchange damage for
@@ -123,6 +121,12 @@ blinding, breaking gear, tripping, pickpocketing, climbing,
 restraining, or anything else the GM agrees is plausible. They can
 only cause damage indirectly (e.g., pushing an enemy off a ledge) and
 are resolved with an appropriate ability check.
+
+#### Power attacks
+
+After a successful attack roll but before rolling for damage, PCs can
+opt to make a melee attack a Power Attack. Power Attacks double the
+number of damage dice rolled in exchange for breaking the weapon.
 
 ### Damage and wounds
 
@@ -167,6 +171,10 @@ NPCs die at 0 HP.
 
 - **falling**: 1d6 direct damage per 10’ fallen. If at least three of
   the dice roll a 6, the PC is instantly killed.
+
+- **hungry**: PCs who go hungry carry fewer items. -1 item slot for
+  every day without food. When all item slots are exhausted, the PC
+  starves to death.
 
 - **thirst**: Each day without drinking water applies a -5 penalty to
   all checks. After three days, pass a `CON` check every day or die.
@@ -333,7 +341,20 @@ creatures, make a Reaction roll on the following table:
 | 9-11 | Indifferent, may negotiate. |
 | 12   | Eager, friendly             |
 
-## Wilderness adventure
+## Overland travel
+
+### Rations
+
+Three rations take up one slot. One ration is consumed for each day of
+travel. Rations include water skins.
+
+PCs that fail to consume food for a day gain the Hungry status.
+
+### Foraging
+
+Finding food takes a watch and requires passing a `WIS` check, with
+modifiers for weather, terrain, etc. On a success, a PC collects d6
+rations.
 
 ### Traveling
 
@@ -355,12 +376,6 @@ secret) to see if they move to a random adjacent hex.
 The party can spend a watch exploring the area of a six-mile hex to
 reveal any areas of interest (such as an overgrown ruin, hidden pool,
 etc.) that wouldn’t be noticed by passing through.
-
-### Foraging
-
-Finding food takes a watch and requires passing a `WIS` check, with
-modifiers for weather, terrain, etc. On a success, a PC collects d6
-rations.
 
 ## Downtime
 
@@ -422,3 +437,47 @@ a monster part requires one 10-minute turn and the proper tools.
 Harvested body parts or plants take up at least one slot, due to the
 packaging and fluids they must be preserved in.
 
+## Monsters
+
+### Morale check
+
+```
+flee/surrender = 2d6 > MRL
+```
+
+Monsters check morale during the breaking point of a battle. For
+example: after half of their forces are lost, after their leader is
+killed, or after they are attacked by something they fear.
+
+If the monster rolls 2d6 greater than their `MRL`, the monster will
+flee or surrender.
+
+### Monster stats
+
+`AC`: beat this number for a successful hit.
+
+`HD`: monsters roll HD d8s for hit points. Use this number as the
+monster's level for skill checks.
+
+`ATK`: number/type/damage of attacks in one round. Monsters armed with
+weapons typically deal d6 damage.
+
+`MRL`: how likely the monster is to flee or surrender during combat
+(see morale check above).
+
+`NA`: how many of this monster commonly appear together in a random
+encounter.
+
+Anything else: special notes for abilities and tactics.
+
+### Bestiary
+
+- **bandit**: AC 13, HD 1, ATK d6, MRL 8, NA: d8. Likes to ambush.
+
+- **giant frog**: AC 12, HD 3, ATK d4 (bite) or ATK d6 (spit), NA d4.
+  15' sticky tongue. On ranged hit, drags and bites. On 20+, swallows
+  target, dealing d6 damage a round until the toad dies. Immune to
+  acid.
+
+- **slime**: AC 11, HD 4, MOV slow, ATK 2d4, NA d4. Engulf: touched
+  targets are engulfed and must escape via STR check. 2d4/round.

@@ -22,8 +22,8 @@ start with d6 maximum Hit Points (HP).
 ### 3. Pick two careers
 
 Roll or pick two careers. You gain those careers’ items, as well as
-any of the following that you can carry: 3d6×10 coins, 2 rations, a
-50’ rope, 2 torches, any armor pieces or weapons and a quiver of 20
+any of the following that you can carry: 3d6×10 coins, three rations,
+a 50’ rope, 2 torches, any armor pieces or weapons and a quiver of 20
 arrows. If the PC has any points in `INT`, they may receive a random
 spell book for each point.
 
