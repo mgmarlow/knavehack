@@ -6,41 +6,23 @@
     <meta name="description" content="knavehack ttrpg">
     <title>knavehack</title>
     <link rel="icon" href="https://fav.farm/♞" />
-    <link rel="stylesheet" href="/public/pico.min.css">
-    <link rel="stylesheet" href="/public/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>knavehack</h1>
-        <div>
-          <a href="/">rules</a> /
-          <a href="/players">players</a> /
-          <a href="/gms">gms</a>
-        </div>
-        <hr />
-      </header>
+    <div class="container is-max-desktop">
+      {% include "navbar.njk" %}
 
-      <br />
-
-      <div class="two-column">
-        <aside>
-          {{ content | toc | safe }}
-        </aside>
-
-        <main>
+      <main class="content">
+        <section class="section">
           {{ content | safe }}
-        </main>
-      </div>
-
-      <br />
-
-      <footer>
-        <hr />
-
-        knavehack - <a href="https://github.com/mgmarlow/knavehack/blob/main/LICENSE">open game license</a> - <a href="https://github.com/mgmarlow/knavehack">github</a>
-      </footer>
+        </section>
+      </main>
     </div>
+
+    <footer class="footer has-text-centered">
+      knavehack - <a href="https://github.com/mgmarlow/knavehack/blob/main/LICENSE">open game license</a> - <a href="https://github.com/mgmarlow/knavehack">github</a>
+    </footer>
+
     <script src="/assets/js/application.js"></script>
   </body>
 </html>
