@@ -34,8 +34,6 @@ Player characters (PCs) have six ability scores, each rated from 0 to 10:
 6. `CHA`: personality, e.g. persuasion, coercion. PCs can have a
    number of companions equal to their `CHA`.
 
-[Create a character](/players)
-
 ## Skill checks
 
 ```
@@ -54,6 +52,52 @@ difficulty.
 - There are no knowledge checks.
 
 - Opposing HD from a monster/NPC may be used as DC.
+
+---
+
+## Create a character
+
+### 1. Record ability scores
+
+Distribute 3 points between your PC’s ability scores. More than 1
+point can be placed in the same score. Or, let fate decide by rolling
+3d6, with each die adding 1 to the ability score matching the number
+it rolled.
+
+_Example: rolling 3-5-5 means `CON` (the 3rd ability) is 1 and `WIS`
+(the 5th ability) is 2. All other abilities have a score of 0._
+
+### 2. Record secondary stats
+
+PCs start at level 1 with 0 XP. They have 11 + `CON` item slots and
+start with d6 maximum Hit Points (HP).
+
+### 3. Pick two careers
+
+Roll or pick two careers. You gain those careers’ items, as well as
+any of the following that you can carry: 3d6×10 coins, three rations,
+a 50’ rope, 2 torches, any armor pieces or weapons and a quiver of 20
+arrows. If the PC has any points in `INT`, they may receive a random
+spell book for each point.
+
+career 1:
+
+{% tableroll "careers" %}
+
+career 2:
+
+{% tableroll "careers" %}
+
+### 4. Record armor
+
+PCs have Armor Points `AP` equal to their number of armor pieces and
+an Armor Class `AC` equal to `AP` + 11.
+
+### 5. Finishing touches
+
+Name and describe your character.
+
+---
 
 ## Combat
 
@@ -189,6 +233,8 @@ NPCs die at 0 HP.
   alcohol. If they fail, they become drunk and take -5 to all checks
   until the next day. If a creature fails the `CON` check two hours in
   a row, they pass out for two watches (8 hours).
+  
+---
 
 ## Inventory
 
@@ -241,6 +287,8 @@ Magic weapons typically add +1 to any attribute being tested whilst
 using the weapon and +1 to each damage dice rolled. More powerful
 weapons (+2/3) can be found if the GM includes them.
 
+---
+
 ## Spellcasting
 
 A spellbook takes up an item slot and contains a single spell.
@@ -272,6 +320,8 @@ creature, the creature may make a save to avoid it.
 
 {% tableroll "spells" %}
 
+---
+
 ## Leveling up
 
 PCs are awarded 1 experience point (XP) for each coin (c) worth of
@@ -297,6 +347,8 @@ Don't reset XP to zero after leveling, Knavehack tracks total XP.
 | 8     | 125,000  | 8d6  | Rogue    |
 | 9     | 250,000  | 9d6  | Jack     |
 | 10    | 500,000  | 10d6 | Knave    |
+
+---
 
 ## Dungeon adventure
 
@@ -341,6 +393,8 @@ creatures, make a Reaction roll on the following table:
 | 9-11 | Indifferent, may negotiate. |
 | 12   | Eager, friendly             |
 
+---
+
 ## Overland travel
 
 ### Rations
@@ -376,6 +430,8 @@ secret) to see if they move to a random adjacent hex.
 The party can spend a watch exploring the area of a six-mile hex to
 reveal any areas of interest (such as an overgrown ruin, hidden pool,
 etc.) that wouldn’t be noticed by passing through.
+
+---
 
 ## Downtime
 
@@ -436,6 +492,8 @@ lung (fire breathing) or a dragon's scales (fireproofing). Harvesting
 a monster part requires one 10-minute turn and the proper tools.
 Harvested body parts or plants take up at least one slot, due to the
 packaging and fluids they must be preserved in.
+
+---
 
 ## Monsters
 
