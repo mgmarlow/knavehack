@@ -532,6 +532,11 @@ Anything else: special notes for abilities and tactics.
 
 - **bandit**: AC 13, HD 1, ATK d6, MRL 8, NA: d8. Likes to ambush.
 
+- **wolf**: AC 13, HD 2, MOV fast, ATK d6, MRL 8, NA 2d6. Prefers to
+  surround and flank.
+
+- **dire wolf**: AC 14, HD 4, MOV fast, ATK 2d4, MRL 9, NA 1d4.
+
 - **giant frog**: AC 12, HD 3, ATK d4 (bite) or ATK d6 (spit), NA d4.
   15' sticky tongue. On ranged hit, drags and bites. On 20+, swallows
   target, dealing d6 damage a round until the toad dies. Immune to
@@ -539,3 +544,12 @@ Anything else: special notes for abilities and tactics.
 
 - **slime**: AC 11, HD 4, MOV slow, ATK 2d4, NA d4. Engulf: touched
   targets are engulfed and must escape via STR check. 2d4/round.
+
+- **gnoll**: AC 15, HD 2, ATK d6, NA 1d6, MRL 8. Wander in tribes.
+
+- **ghoul**: AC 14, HD 2, ATK 2 claws (d4) and 1 bite (d4), NA 1d6,
+  MRL 9. Those hit by a ghoul's bite or claw attack must save vs.
+  `CON` or they're paralyzed for 2d8 turns.
+
+- **lizard person**: AC 15, HD 2, ATK 1d6 + 1, MRL 11, NA 2d4. Always
+  receives a +1 to melee damage thanks to tremendous strength.
