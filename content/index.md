@@ -372,7 +372,7 @@ extinguished).
 
 ### Random encounters
 
-After each game turn, roll a d8. A 1 result means the players
+Once every three game turns, roll a d6. A 1 result means the players
 encounter a randomly generated creature or distraction in the
 following turn.
 
@@ -420,6 +420,9 @@ PCs can move one six-mile hex per watch, up to three times per day.
 Each watch they travel after the third deals 1 direct damage to each
 PC unless they succeed at a `CON` check. Speed is halved in darkness,
 difficult terrain, or severe weather and doubled when riding.
+
+On every watch, roll a d6 for random encounters. On a 1 result, an
+encounter occurs.
 
 ### Navigation
 
@@ -537,19 +540,27 @@ Anything else: special notes for abilities and tactics.
 
 - **dire wolf**: AC 14, HD 4, MOV fast, ATK 2d4, MRL 9, NA 1d4.
 
-- **giant frog**: AC 12, HD 3, ATK d4 (bite) or ATK d6 (spit), NA d4.
-  15' sticky tongue. On ranged hit, drags and bites. On 20+, swallows
-  target, dealing d6 damage a round until the toad dies. Immune to
-  acid.
+- **hellhound**: AC 14, HD 3, ATK bite (d6) or breath (3d6), MRL 9, NA
+  2d4. Breath weapon is a cone of flame.
 
-- **slime**: AC 11, HD 4, MOV slow, ATK 2d4, NA d4. Engulf: touched
-  targets are engulfed and must escape via STR check. 2d4/round.
+- **giant scorpian**: AC 15, HD 4, ATK 2 claws (d10) and 1 stinger
+  (d6 + poison), MRL 11, NA d6. Succeed a `CON` check or die from the
+  stinger's poison.
 
-- **gnoll**: AC 15, HD 2, ATK d6, NA 1d6, MRL 8. Wander in tribes.
+- **giant frog**: AC 12, HD 3, ATK d4 (bite) or ATK d6 (spit), MRL 9,
+  NA d4. 15' sticky tongue. On ranged hit, drags and bites. On 20+,
+  swallows target, dealing d6 damage a round until the toad dies.
+  Immune to acid.
 
-- **ghoul**: AC 14, HD 2, ATK 2 claws (d4) and 1 bite (d4), NA 1d6,
-  MRL 9. Those hit by a ghoul's bite or claw attack must save vs.
-  `CON` or they're paralyzed for 2d8 turns.
+- **slime**: AC 11, HD 4, MOV slow, ATK 2d4, MRL n/a, NA d4. Engulf:
+  touched targets are engulfed and must escape via STR check.
+  2d4/round.
+
+- **gnoll**: AC 15, HD 2, ATK d6, MRL 8, NA 1d6. Wander in tribes.
+
+- **ghoul**: AC 14, HD 2, ATK 2 claws (d4) and 1 bite (d4), MRL 11, NA
+  1d6. Those hit by a ghoul's bite or claw attack must succeed a `CON`
+  check or they're paralyzed for 2d8 turns.
 
 - **lizard person**: AC 15, HD 2, ATK 1d6 + 1, MRL 11, NA 2d4. Always
   receives a +1 to melee damage thanks to tremendous strength.
