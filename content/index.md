@@ -75,8 +75,8 @@ start with d6 maximum Hit Points (HP).
 ### 3. Pick two careers
 
 Roll or pick two careers. You gain those careers’ items, as well as
-any of the following that you can carry: 3d6×10 coins, three rations,
-a 50’ rope, 2 torches, any armor pieces or weapons and a quiver of 20
+any of the following that you can carry: 3d6×10 coins, rations, a 50’
+rope, 2 torches, any armor pieces or weapons and a quiver of 20
 arrows. If the PC has any points in `INT`, they may receive a random
 spell book for each point.
 
@@ -399,8 +399,8 @@ creatures, make a Reaction roll on the following table:
 
 ### Rations
 
-Three rations take up one slot. One ration is consumed for each day of
-travel. Rations include water skins.
+Three rations take up one item slot. One ration is consumed for one
+day of travel. Rations include water skins.
 
 PCs that fail to consume food for a day gain the Hungry status.
 
