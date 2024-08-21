@@ -69,7 +69,7 @@ _Example: rolling 3-5-5 means `CON` (the 3rd ability) is 1 and `WIS`
 
 ### 2. Record secondary stats
 
-PCs start at level 1 with 0 XP. They have 11 + `CON` item slots and
+PCs start at level 1 with 0 XP. They have 10 + `CON` item slots and
 start with d6 maximum Hit Points (HP).
 
 ### 3. Pick two careers
@@ -190,9 +190,14 @@ monsters.
 
 #### Healing
 
-HP fully heals each morning after two watches of sleep and a
-meal the night before. While in a safe haven, this also heals one
-wound.
+HP fully heals each morning after two watches of sleep and a meal the
+night before (consuming a ration). While in a safe haven, this also
+heals one wound.
+
+If a player is interrupted during a watch due to a random encounter,
+roll a `CON` check the next morning with a DC based on the severity of
+the encounter (11 on average). If the PC fails, that character gains
+no health but still expends a ration.
 
 #### Death
 
@@ -241,7 +246,7 @@ NPCs die at 0 HP.
 ### Item slots
 
 ```
-item slots = 11 + CON
+item slots = 10 + CON
 ```
 
 Most items, including groups of small items that could fit in one
@@ -253,26 +258,53 @@ a full slot.
 All costs are in coins (c). 10c is the wage for a day of unskilled
 labor.
 
-- **common items**: Found in any settlement. Rope, torch, saw, arrow,
-  quiver, etc. (5c).
+#### Common items
 
-- **uncommon items**: Found in towns or cities. Lantern, bear trap,
-  etc. (20c).
+| Item               | Cost   | # per item slot |
+|:-------------------|:-------|:----------------|
+| Arrows (20)        | 5c     | 1-20            |
+| Rope, 60'          | 5c     | 1               |
+| Torch              | 5c     | 1               |
+| Rations (3)        | 5c     | 1-3             |
+| Pole               | 5c     | 1               |
+| Crowbar            | 5c     | 1               |
+| Flint and steel    | 5c     | 1               |
+| Caltrops (one bag) | 20c    | 1               |
+| Lantern            | 20c    | 1               |
+| Bear trap          | 20c    | 1               |
+| Grappling hook     | 20c    | 1               |
+| Oil (flask)        | 20c    | 1               |
+| Gem                | Varies | 1-10            |
 
-- **rare items**: Found only in cities. Sextant, hourglass, astrolabe,
-  etc. (100c+).
+#### Weapons
 
-- **melee weapons**: One-handed weapons: d6 damage, 1 slot (50c).
-  Two-handed weapons: d8 damage, two slots (100c).
+| Weapon             | Cost | Item slots | Range           | Damage | Hands |
+|:-------------------|:-----|:-----------|:----------------|:-------|:------|
+| Mace               | 50c  | 1          | Close           | d6     | 1     |
+| Spear              | 50c  | 1          | Close           | d6     | 1     |
+| Sword              | 50c  | 1          | Close           | d6     | 1     |
+| Dagger             | 50c  | 1          | Close           | d6     | 1     |
+| Greatsword         | 100c | 2          | Close           | d8     | 2     |
+| Battleaxe          | 100c | 2          | Close           | d8     | 2     |
+| Sling (one-handed) | 50c  | 1          | Nearby (60')    | d4     | 2     |
+| Bow (two-handed)   | 100c | 2          | Far away (120') | d6     | 2     |
 
-- **missile weapons**: Slings: One hand, one slot, d4 damage, 60’
-  range (50c). Bows: Two hands, two slots, d6 damage, 120’ range
-  (100c). Quivers hold 20 arrows.
+#### Armor
 
-- **armor pieces**: PCs can wear up to 7 pieces. Each uses one slot
-  and grants 1 AP (max of 7 AP or 18 Armor Class). Shield (100c),
-  Helmet (100c), Gambeson (100c), Mail shirt (200c), Breastplate
-  (500c), Arm plate (500c), Leg plate (500c).
+PCs can wear up to 7 pieces. A shield can only be equipped with a
+one-handed weapon.
+
+| Armor       | Cost | Item slots | Armor points | Hands |
+|:------------|:-----|:-----------|:-------------|:------|
+| Shield      | 100c | 1          | 1            | 1     |
+| Helmet      | 100c | 1          | 1            | -     |
+| Gambeson    | 100c | 1          | 1            | -     |
+| Mail shirt  | 200c | 1          | 1            | -     |
+| Breastplate | 500c | 1          | 1            | -     |
+| Arm plate   | 500c | 1          | 1            | -     |
+| Leg plate   | 500c | 1          | 1            | -     |
+
+#### Other items/gear
 
 - **animals**: Poultry (5c), Dogs, Pigs, Goats, etc. (20c), Cows
   (100c), Falcons (1000c).
@@ -400,7 +432,8 @@ creatures, make a Reaction roll on the following table:
 ### Rations
 
 Three rations take up one item slot. One ration is consumed for one
-day of travel. Rations include water skins.
+day of travel. A single ration includes a complete day of food and
+water for a single PC.
 
 PCs that fail to consume food for a day gain the Hungry status.
 
