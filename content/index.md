@@ -279,15 +279,18 @@ labor.
 
 #### Weapons
 
-| Weapon             | Cost | Item slots | Range           | Damage | Hands |
+| Melee weapon | Cost | Item slots | Range | Damage | Hands |
+|:-------------|:-----|:-----------|:------|:-------|:------|
+| Mace         | 50c  | 1          | Close | d6     | 1     |
+| Spear        | 50c  | 1          | Close | d6     | 1     |
+| Sword        | 50c  | 1          | Close | d6     | 1     |
+| Dagger       | 50c  | 1          | Close | d6     | 1     |
+| Greatsword   | 100c | 2          | Close | d8     | 2     |
+| Battleaxe    | 100c | 2          | Close | d8     | 2     |
+
+| Ranged weapon      | Cost | Item slots | Range           | Damage | Hands |
 |:-------------------|:-----|:-----------|:----------------|:-------|:------|
-| Mace               | 50c  | 1          | Close           | d6     | 1     |
-| Spear              | 50c  | 1          | Close           | d6     | 1     |
-| Sword              | 50c  | 1          | Close           | d6     | 1     |
-| Dagger             | 50c  | 1          | Close           | d6     | 1     |
-| Greatsword         | 100c | 2          | Close           | d8     | 2     |
-| Battleaxe          | 100c | 2          | Close           | d8     | 2     |
-| Sling (one-handed) | 50c  | 1          | Nearby (60')    | d4     | 2     |
+| Sling (one-handed) | 50c  | 1          | Nearby (60')    | d4     | 1     |
 | Bow (two-handed)   | 100c | 2          | Far away (120') | d6     | 2     |
 
 #### Armor
