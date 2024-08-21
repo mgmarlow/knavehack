@@ -4,10 +4,11 @@ layout: "main.njk"
 
 # Rules
 
-**Knavehack** is a mashup of [Knave: Second
-Edition](https://questingbeast.itch.io/knave-second-edition) and a few
-other [OSR
-systems](https://en.wikipedia.org/wiki/Old_School_Renaissance). It's
+**Knavehack** is [Knave: Second
+Edition](https://questingbeast.itch.io/knave-second-edition) but
+hacked up and rewritten to suit my table. It blends in ideas from a
+handful of other [OSR
+systems](https://en.wikipedia.org/wiki/Old_School_Renaissance) and is
 designed to be quick, simple, and classless. Your equipment defines
 your role, your loot defines your XP, and your improvisation defines
 your success.
@@ -267,14 +268,14 @@ for a day of unskilled labor.
 | Rope, 60'          | 5c     | 1               |
 | Torch              | 5c     | 1               |
 | Rations (3)        | 5c     | 1-3             |
-| Pole               | 5c     | 1               |
-| Crowbar            | 5c     | 1               |
 | Flint and steel    | 5c     | 1               |
-| Caltrops (one bag) | 20c    | 1               |
-| Lantern            | 20c    | 1               |
-| Bear trap          | 20c    | 1               |
-| Grappling hook     | 20c    | 1               |
-| Oil (flask)        | 20c    | 1               |
+| Pole               | 25c    | 1               |
+| Crowbar            | 25c    | 1               |
+| Lantern            | 25c    | 1               |
+| Oil (flask)        | 25c    | 1               |
+| Caltrops (one bag) | 50c    | 1               |
+| Bear trap          | 50c    | 1               |
+| Grappling hook     | 50c    | 1               |
 | Gem                | Varies | 1-10            |
 | Coins (500)        | 500c   | 1-500           |
 
@@ -309,20 +310,6 @@ one-handed weapon.
 | Breastplate | 500c | 1          | 1            | -     |
 | Arm plate   | 500c | 1          | 1            | -     |
 | Leg plate   | 500c | 1          | 1            | -     |
-
-### Animals
-
-Item slots are only relevant for animals if they take part in combat
-or are ridden. Animals require an additional ration per rest.
-
-| Animal  | Cost  | Item slots      |
-|:--------|:------|:----------------|
-| Poultry | 5c    | 1               |
-| Dog     | 20c   | 1               |
-| Goat    | 20c   | -               |
-| Cow     | 100c  | -               |
-| Falcon  | 1000c | 1               |
-| Horse   | 1000c | 1 (when riding) |
 
 ---
 
