@@ -287,6 +287,7 @@ labor.
 | Dagger       | 50c  | 1          | Close | d6     | 1     |
 | Greatsword   | 100c | 2          | Close | d8     | 2     |
 | Battleaxe    | 100c | 2          | Close | d8     | 2     |
+| Warhammer    | 200c | 3          | Close | d10    | 2     |
 
 | Ranged weapon      | Cost | Item slots | Range           | Damage | Hands |
 |:-------------------|:-----|:-----------|:----------------|:-------|:------|
