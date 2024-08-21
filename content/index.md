@@ -275,6 +275,7 @@ labor.
 | Grappling hook     | 20c    | 1               |
 | Oil (flask)        | 20c    | 1               |
 | Gem                | Varies | 1-10            |
+| Coins              | 1      | 500             |
 
 #### Weapons
 
