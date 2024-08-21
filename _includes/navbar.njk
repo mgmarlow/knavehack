@@ -1,27 +1,6 @@
-<nav x-data="{ open: false }" class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <p class="navbar-item">
-      ♞ Knavehack
-    </p>
-
-    <a @click="open = !open"
-       role="button"
-       :class="open ? 'navbar-burger is-active' : 'navbar-burger'"
-       aria-label="menu"
-       aria-expanded="false"
-       data-target="navbar">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbar" :class="open ? 'navbar-menu is-active' : 'navbar-menu'">
-    <div class="navbar-start">
-      <a class="navbar-item" href="/">
-        Rules
-      </a>
-    </div>
-  </div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <ul>
+    <li><a href="/">♞ Knavehack</a></li>
+    <li><a href="/">Rules</a></li>
+  </ul>
 </nav>

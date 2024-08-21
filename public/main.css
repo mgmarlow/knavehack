@@ -1,41 +1,77 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --main-bg-color: #14161a;
+    --main-text-color: #abb1bf;
+    --bold-text-color: #ebecf0;
+    --info-text-color: #7585ff;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, strong, thead {
+    color: var(--bold-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 1.125 - Major Second */
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.424rem;
+}
+
+h4 {
+    font-size: 1.266rem;
+}
+
+h5 {
+    font-size: 1.125;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--info-text-color);
+}
+
 .container {
-    max-width: 1200px;
-}
-
-.two-column {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 4rem;
-}
-
-.toc ul {
-    list-style-type: none;
-    padding-left: 1rem;
-}
-
-.toc ul li {
-    padding: 0;
-}
-
-.toc ul li:last-child {
-    margin-bottom: 0.5rem;
-}
-
-header {
-    margin-top: 2rem;
-}
-
-footer {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-@media screen and (max-width: 900px) {
-    .toc {
-        display: none;
-    }
-
-    .two-column {
-        display: block;
-    }
+    max-width: 750px;
+    margin: 0 auto;
 }

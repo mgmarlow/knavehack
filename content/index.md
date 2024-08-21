@@ -54,8 +54,6 @@ difficulty.
 
 - Opposing HD from a monster/NPC may be used as DC.
 
----
-
 ## Create a character
 
 ### 1. Record ability scores
@@ -98,7 +96,7 @@ an Armor Class `AC` equal to `AP` + 11.
 
 Name and describe your character.
 
----
+
 
 ## Combat
 
@@ -240,7 +238,7 @@ NPCs die at 0 HP.
   until the next day. If a creature fails the `CON` check two hours in
   a row, they pass out for two watches (8 hours).
 
----
+
 
 ## Equipment and item slots
 
@@ -311,7 +309,7 @@ one-handed weapon.
 | Arm plate   | 500c | 1          | 1            | -     |
 | Leg plate   | 500c | 1          | 1            | -     |
 
----
+
 
 ## Spellcasting
 
@@ -344,8 +342,6 @@ creature, the creature may make a save to avoid it.
 
 {% tableroll "spells" %}
 
----
-
 ## Leveling up
 
 PCs are awarded 1 experience point (XP) for each coin (c) worth of
@@ -371,8 +367,6 @@ Don't reset XP to zero after leveling, Knavehack tracks total XP.
 | 8     | 125,000  | 8d6  | Rogue    |
 | 9     | 250,000  | 9d6  | Jack     |
 | 10    | 500,000  | 10d6 | Knave    |
-
----
 
 ## Dungeon adventure
 
@@ -417,8 +411,6 @@ creatures, make a Reaction roll on the following table:
 | 9-11 | Indifferent, may negotiate. |
 | 12   | Eager, friendly             |
 
----
-
 ## Overland travel
 
 ### Rations
@@ -458,8 +450,6 @@ secret) to see if they move to a random adjacent hex.
 The party can spend a watch exploring the area of a six-mile hex to
 reveal any areas of interest (such as an overgrown ruin, hidden pool,
 etc.) that wouldn’t be noticed by passing through.
-
----
 
 ## Downtime
 
@@ -520,8 +510,6 @@ lung (fire breathing) or a dragon's scales (fireproofing). Harvesting
 a monster part requires one 10-minute turn and the proper tools.
 Harvested body parts or plants take up at least one slot, due to the
 packaging and fluids they must be preserved in.
-
----
 
 ## Monsters
 
