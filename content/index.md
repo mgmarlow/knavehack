@@ -241,24 +241,25 @@ NPCs die at 0 HP.
 
 ---
 
-## Inventory
-
-### Item slots
+## Equipment and item slots
 
 ```
 item slots = 10 + CON
 ```
 
-Most items, including groups of small items that could fit in one
-hand, take up one slot. Two-handed items take two slots. 500 coins use
-a full slot.
+PCs have a limited number of item slots for holding weapons, armor,
+loot, and animal companions. Most items, including groups of small
+items that could fit in one hand, take up one slot. Two-handed items
+take two slots. As a baseline, 500 coins use a full slot.
 
-### Equipment
+When a PC takes wounds, they lose item slots equal to the number of
+wounds inflicted. If all item slots are filled with wounds, the PC is
+dead.
 
-All costs are in coins (c). 10c is the wage for a day of unskilled
-labor.
+All costs in the below item tables are in coins (c). 10c is the wage
+for a day of unskilled labor.
 
-#### Common items
+### Common items
 
 | Item               | Cost   | # per item slot |
 |:-------------------|:-------|:----------------|
@@ -275,9 +276,9 @@ labor.
 | Grappling hook     | 20c    | 1               |
 | Oil (flask)        | 20c    | 1               |
 | Gem                | Varies | 1-10            |
-| Coins              | 1      | 500             |
+| Coins (500)        | 500c   | 1-500           |
 
-#### Weapons
+### Weapons
 
 | Melee weapon | Cost | Item slots | Range | Damage | Hands |
 |:-------------|:-----|:-----------|:------|:-------|:------|
@@ -294,7 +295,7 @@ labor.
 | Sling (one-handed) | 50c  | 1          | Nearby (60')    | d4     | 1     |
 | Bow (two-handed)   | 100c | 2          | Far away (120') | d6     | 2     |
 
-#### Armor
+### Armor
 
 PCs can wear up to 7 pieces. A shield can only be equipped with a
 one-handed weapon.
@@ -309,20 +310,19 @@ one-handed weapon.
 | Arm plate   | 500c | 1          | 1            | -     |
 | Leg plate   | 500c | 1          | 1            | -     |
 
-#### Other items/gear
+### Animals
 
-- **animals**: Poultry (5c), Dogs, Pigs, Goats, etc. (20c), Cows
-  (100c), Falcons (1000c).
+Item slots are only relevant for animals if they take part in combat
+or are ridden. Animals require an additional ration per rest.
 
-- **clothing sets**: Poor (60c), Humble (120c), Respectable (240c),
-  Wealthy (600c), Minor Noble (2400c), Major Noble (12,000c), Royal
-  (120,000c).
-
-### Magic items
-
-Magic weapons typically add +1 to any attribute being tested whilst
-using the weapon and +1 to each damage dice rolled. More powerful
-weapons (+2/3) can be found if the GM includes them.
+| Animal  | Cost  | Item slots      |
+|:--------|:------|:----------------|
+| Poultry | 5c    | 1               |
+| Dog     | 20c   | 1               |
+| Goat    | 20c   | -               |
+| Cow     | 100c  | -               |
+| Falcon  | 1000c | 1               |
+| Horse   | 1000c | 1 (when riding) |
 
 ---
 
