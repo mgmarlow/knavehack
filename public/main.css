@@ -77,9 +77,19 @@ a {
 }
 
 .container {
-    max-width: 750px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 3rem 1.5rem;
+}
+
+button {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--info-text-color);
+    color: var(--main-text-color);
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 /* tables */
@@ -90,6 +100,7 @@ table {
 
 table thead th {
     border-width: 0 0 2px;
+    text-align: left;
 }
 
 table td, table th {
@@ -103,8 +114,11 @@ ol:not(:first-child), ul:not(:first-child) {
     margin-top: 1rem;
 }
 
+ol:not(:last-child), ul:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
 ol, ul {
-    /* margin-left: 1rem; */
     margin-inline-start: 2rem;
 }
 
