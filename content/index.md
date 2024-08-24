@@ -37,24 +37,17 @@ Player characters (PCs) have six ability scores, each rated from 0 to 10:
 
 ## Skill checks
 
-```
-success = d20 + ability score + modifiers > DC
-```
-
 Roll a d20, adding the ability score relevant for the check and any
-optional modifiers.
+optional modifiers. If the skill check is **greater** than the
+difficulty class (DC) the check succeeds.
 
-If the skill check is greater than the difficulty class (DC) the check
-succeeds. DC ranges from 11-21, where 16 is considered average
-difficulty.
+DC ranges from 11-21, where 16 is considered average difficulty.
 
 - Modifiers are gained/lost in increments of 5.
 
 - There are no knowledge checks.
 
-- Opposing HD from a monster/NPC may be used as DC.
-
----
+- Opposing hit dice (HD) from a monster/NPC may be used as DC.
 
 ## Create a character
 
@@ -81,11 +74,7 @@ rope, 2 torches, any armor pieces or weapons and a quiver of 20
 arrows. If the PC has any points in `INT`, they may receive a random
 spell book for each point.
 
-career 1:
-
 {% tableroll "careers" %}
-
-career 2:
 
 {% tableroll "careers" %}
 
@@ -97,8 +86,6 @@ an Armor Class `AC` equal to `AP` + 11.
 ### 5. Finishing touches
 
 Name and describe your character.
-
----
 
 ## Combat
 
@@ -113,9 +100,9 @@ action and move somewhere **Far-Away** instead. Anything beyond
 **Far-Away** can be classified as **Distant** and would take 3 moves
 to get to.
 
-|CLOSE|NEARBY|FAR AWAY|
-|-----|------|--------|
-|0 - 5ft|5 - 60ft|60 - 120ft|
+| CLOSE   | NEARBY   | FAR AWAY   |
+|---------|----------|------------|
+| 0 - 5ft | 5 - 60ft | 60 - 120ft |
 
 ### Initiative
 
@@ -127,21 +114,12 @@ casting a spell, moving, maneuvering, etc
 
 ### Armor Class
 
-```
-AC = 11 + armor points
-```
-
-Armor class represents combat resilience, in the form of armor
-absorbing a blow, influencing a dodge, or otherwise avoiding damage.
-Armor points are gained from equipment.
+Armor class (AC) represents combat resilience, in the form of armor
+absorbing a blow, influencing a dodge, or otherwise avoiding damage. A
+character's base AC is 11 (unarmored). Every additional armor point
+gained from equipment is added to a character's AC.
 
 ### Attacking
-
-```
-melee = d20 + STR > AC
-
-ranged = d20 + WIS > AC
-```
 
 Make a check using `STR` (for melee attacks) or `WIS` (for ranged
 attacks) against the defender’s armor class. If the check succeeds,
@@ -151,7 +129,7 @@ the attack is successful and damage is rolled.
 
 - On a natural 1, the weapon breaks.
 
-- **Careers never add bonuses to attacks or maneuvers**.
+- Careers never add bonuses to attacks or maneuvers.
 
 - Ranged attacks cannot be made while in melee.
 
@@ -240,18 +218,14 @@ NPCs die at 0 HP.
   until the next day. If a creature fails the `CON` check two hours in
   a row, they pass out for two watches (8 hours).
 
----
+
 
 ## Equipment and item slots
 
-```
-item slots = 10 + CON
-```
-
-PCs have a limited number of item slots for holding weapons, armor,
-loot, and animal companions. Most items, including groups of small
-items that could fit in one hand, take up one slot. Two-handed items
-take two slots. As a baseline, 500 coins use a full slot.
+PCs have 11 + `CON` item slots for holding weapons, armor, loot, and
+animal companions. Most items, including groups of small items that
+could fit in one hand, take up one slot. Two-handed items take two
+slots. As a baseline, 500 coins use a full slot.
 
 When a PC takes wounds, they lose item slots equal to the number of
 wounds inflicted. If all item slots are filled with wounds, the PC is
@@ -311,7 +285,7 @@ one-handed weapon.
 | Arm plate   | 500c | 1          | 1            | -     |
 | Leg plate   | 500c | 1          | 1            | -     |
 
----
+
 
 ## Spellcasting
 
@@ -344,8 +318,6 @@ creature, the creature may make a save to avoid it.
 
 {% tableroll "spells" %}
 
----
-
 ## Leveling up
 
 PCs are awarded 1 experience point (XP) for each coin (c) worth of
@@ -371,8 +343,6 @@ Don't reset XP to zero after leveling, Knavehack tracks total XP.
 | 8     | 125,000  | 8d6  | Rogue    |
 | 9     | 250,000  | 9d6  | Jack     |
 | 10    | 500,000  | 10d6 | Knave    |
-
----
 
 ## Dungeon adventure
 
@@ -417,8 +387,6 @@ creatures, make a Reaction roll on the following table:
 | 9-11 | Indifferent, may negotiate. |
 | 12   | Eager, friendly             |
 
----
-
 ## Overland travel
 
 ### Rations
@@ -458,8 +426,6 @@ secret) to see if they move to a random adjacent hex.
 The party can spend a watch exploring the area of a six-mile hex to
 reveal any areas of interest (such as an overgrown ruin, hidden pool,
 etc.) that wouldn’t be noticed by passing through.
-
----
 
 ## Downtime
 
@@ -521,15 +487,9 @@ a monster part requires one 10-minute turn and the proper tools.
 Harvested body parts or plants take up at least one slot, due to the
 packaging and fluids they must be preserved in.
 
----
-
 ## Monsters
 
 ### Morale check
-
-```
-flee/surrender = 2d6 > MRL
-```
 
 Monsters check morale during the breaking point of a battle. For
 example: after half of their forces are lost, after their leader is

@@ -1,21 +1,10 @@
 const esbuild = require("esbuild");
 const fs = require("node:fs");
-const sass = require("sass");
 const tableroll = require("./_11ty/shortcodes/tableroll");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("assets/");
   eleventyConfig.addPassthroughCopy("public");
-
-  eleventyConfig.on("afterBuild", () => {
-    const result = sass.compile("assets/sass/main.scss", {
-      style: "compressed",
-      loadPaths: ["node_modules"],
-    });
-
-    fs.mkdirSync("_site/assets/css", { recursive: true });
-    return fs.writeFileSync("_site/assets/css/main.css", result.css);
-  });
 
   eleventyConfig.on("afterBuild", () => {
     return esbuild.build({
