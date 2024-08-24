@@ -222,7 +222,7 @@ NPCs die at 0 HP.
 
 ## Equipment and item slots
 
-PCs have 11 + `CON` item slots for holding weapons, armor, loot, and
+PCs have 10 + `CON` item slots for holding weapons, armor, loot, and
 animal companions. Most items, including groups of small items that
 could fit in one hand, take up one slot. Two-handed items take two
 slots. As a baseline, 500 coins use a full slot.
@@ -236,34 +236,40 @@ for a day of unskilled labor.
 
 ### Common items
 
-| Item               | Cost   | # per item slot |
-|:-------------------|:-------|:----------------|
-| Arrows (20)        | 5c     | 1-20            |
-| Rope, 60'          | 5c     | 1               |
-| Torch              | 5c     | 1               |
-| Rations (3)        | 5c     | 1-3             |
-| Flint and steel    | 5c     | 1               |
-| Pole               | 25c    | 1               |
-| Crowbar            | 25c    | 1               |
-| Lantern            | 25c    | 1               |
-| Oil (flask)        | 25c    | 1               |
-| Caltrops (one bag) | 50c    | 1               |
-| Bear trap          | 50c    | 1               |
-| Grappling hook     | 50c    | 1               |
-| Gem                | Varies | 1-10            |
-| Coins (500)        | 500c   | 1-500           |
+| Item                       | Cost   | # per item slot |
+|:---------------------------|:-------|:----------------|
+| Arrows (20)                | 5c     | 1-20            |
+| Bear trap                  | 50c    | 1               |
+| Caltrops (one bag)         | 50c    | 1               |
+| Crowbar                    | 25c    | 1               |
+| Cloak                      | 2c     | 1               |
+| Common clothing            | 4c     | 1               |
+| Grappling hook             | 50c    | 1               |
+| Gem                        | Varies | 1-10            |
+| Ink (jar)                  | 8gp    | 1               |
+| Iron spikes (12)           | 1c     | 1-12            |
+| Lantern                    | 25c    | 1               |
+| Ladder                     | 5c     | 1               |
+| Mirror                     | 7c     | 1               |
+| Oil (flask)                | 25c    | 1               |
+| Padlock (2 keys)           | 20c    | 1               |
+| Paper (1 sheet)            | 1c     | 1-25            |
+| Pole                       | 25c    | 1               |
+| Quill                      | 5c     | 1               |
+| Rations (3)                | 5c     | 1-3             |
+| Rope, 60'                  | 5c     | 1               |
+| Torch                      | 5c     | 1               |
+| Tent (1 person)            | 10c    | 1               |
+| Thieves' tools             | 25c    | 1               |
+| Tinderbox, flint and steel | 5c     | 1               |
 
 ### Weapons
 
-| Melee weapon | Cost | Item slots | Range | Damage | Hands |
-|:-------------|:-----|:-----------|:------|:-------|:------|
-| Mace         | 50c  | 1          | Close | d6     | 1     |
-| Spear        | 50c  | 1          | Close | d6     | 1     |
-| Sword        | 50c  | 1          | Close | d6     | 1     |
-| Dagger       | 50c  | 1          | Close | d6     | 1     |
-| Greatsword   | 100c | 2          | Close | d8     | 2     |
-| Battleaxe    | 100c | 2          | Close | d8     | 2     |
-| Warhammer    | 200c | 3          | Close | d10    | 2     |
+| Melee weapon       | Cost | Item slots | Range | Damage | Hands |
+|:-------------------|:-----|:-----------|:------|:-------|:------|
+| One-handed         | 50c  | 1          | Close | d6     | 1     |
+| Two-handed         | 100c | 2          | Close | d8     | 2     |
+| Two-handed (great) | 200c | 3          | Close | d10    | 2     |
 
 | Ranged weapon      | Cost | Item slots | Range           | Damage | Hands |
 |:-------------------|:-----|:-----------|:----------------|:-------|:------|
@@ -284,8 +290,6 @@ one-handed weapon.
 | Breastplate | 500c | 1          | 1            | -     |
 | Arm plate   | 500c | 1          | 1            | -     |
 | Leg plate   | 500c | 1          | 1            | -     |
-
-
 
 ## Spellcasting
 
