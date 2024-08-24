@@ -263,7 +263,7 @@ for a day of unskilled labor.
 
 ### Weapons
 
-| Melee weapon             | Cost | Item slots | Range           | Damage | Hands |
+| Weapon                   | Cost | Item slots | Range           | Damage | Hands |
 |:-------------------------|:-----|:-----------|:----------------|:-------|:------|
 | Axe, mace, dagger, sword | 50c  | 1          | Close           | d6     | 1     |
 | Greatsword, battleaxe    | 100c | 2          | Close           | d8     | 2     |
