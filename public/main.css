@@ -7,6 +7,7 @@
     --main-text-color: #abb1bf;
     --bold-text-color: #ebecf0;
     --info-text-color: #7585ff;
+    --border-color: #abb1bf;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.75;
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -26,6 +27,10 @@ body {
 code {
     font-family: "Roboto Mono", monospace;
     font-weight: 600;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,4 +79,57 @@ a {
 .container {
     max-width: 750px;
     margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+/* tables */
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+table thead th {
+    border-width: 0 0 2px;
+}
+
+table td, table th {
+    border: 1px solid var(--border-color);
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+}
+
+/* lists */
+ol:not(:first-child), ul:not(:first-child) {
+    margin-top: 1rem;
+}
+
+ol, ul {
+    /* margin-left: 1rem; */
+    margin-inline-start: 2rem;
+}
+
+ul {
+    list-style: disc;
+}
+
+/* navigation */
+.navbar {
+    margin-bottom: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .brand, .navbar .brand:after, .navbar .brand:visited {
+    text-decoration: none;
+    color: var(--bold-text-color);
+}
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
 }
