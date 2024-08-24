@@ -218,8 +218,6 @@ NPCs die at 0 HP.
   until the next day. If a creature fails the `CON` check two hours in
   a row, they pass out for two watches (8 hours).
 
-
-
 ## Equipment and item slots
 
 PCs have 10 + `CON` item slots for holding weapons, armor, loot, and
@@ -234,7 +232,7 @@ dead.
 All costs in the below item tables are in coins (c). 10c is the wage
 for a day of unskilled labor.
 
-### Common items
+### Basic items
 
 | Item                       | Cost   | # per item slot |
 |:---------------------------|:-------|:----------------|
@@ -265,16 +263,13 @@ for a day of unskilled labor.
 
 ### Weapons
 
-| Melee weapon       | Cost | Item slots | Range | Damage | Hands |
-|:-------------------|:-----|:-----------|:------|:-------|:------|
-| One-handed         | 50c  | 1          | Close | d6     | 1     |
-| Two-handed         | 100c | 2          | Close | d8     | 2     |
-| Two-handed (great) | 200c | 3          | Close | d10    | 2     |
-
-| Ranged weapon      | Cost | Item slots | Range           | Damage | Hands |
-|:-------------------|:-----|:-----------|:----------------|:-------|:------|
-| Sling (one-handed) | 50c  | 1          | Nearby (60')    | d4     | 1     |
-| Bow (two-handed)   | 100c | 2          | Far away (120') | d6     | 2     |
+| Melee weapon             | Cost | Item slots | Range           | Damage | Hands |
+|:-------------------------|:-----|:-----------|:----------------|:-------|:------|
+| Axe, mace, dagger, sword | 50c  | 1          | Close           | d6     | 1     |
+| Greatsword, battleaxe    | 100c | 2          | Close           | d8     | 2     |
+| Warhammer                | 200c | 3          | Close           | d10    | 2     |
+| Sling (one-handed)       | 50c  | 1          | Nearby (60')    | d4     | 1     |
+| Bow (two-handed)         | 100c | 2          | Far away (120') | d6     | 2     |
 
 ### Armor
 

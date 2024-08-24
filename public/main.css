@@ -96,6 +96,7 @@ button {
 table {
     width: 100%;
     margin-bottom: 1rem;
+    font-size: 14px;
 }
 
 table thead th {
@@ -106,7 +107,7 @@ table thead th {
 table td, table th {
     border: 1px solid var(--border-color);
     border-width: 0 0 1px;
-    padding: 0.5em 0.75em;
+    padding: 0.5rem 0.25rem;
 }
 
 /* lists */
