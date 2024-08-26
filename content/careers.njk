@@ -1,0 +1,11 @@
+---
+layout: main.njk
+---
+
+<h1>Careers</h1>
+
+<ol>
+  {% for career in data.careers %}
+  <li>{{ career }}</li>
+  {% endfor %}
+</ol>

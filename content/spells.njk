@@ -1,0 +1,13 @@
+---
+layout: main.njk
+---
+
+<h1>Spells</h1>
+
+<p>99 Spells from Knave first edition:</p>
+
+<ol>
+  {% for spell in data.spells %}
+  <li>{{ spell }}</li>
+  {% endfor %}
+</ol>

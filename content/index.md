@@ -68,7 +68,7 @@ start with d6 maximum Hit Points (HP).
 
 ### 3. Pick two careers
 
-Roll or pick two careers. You gain those careers’ items, as well as
+Roll or pick two [careers](/careers). You gain those careers’ items, as well as
 any of the following that you can carry: 3d6×10 coins, rations, a 50’
 rope, 2 torches, any armor pieces or weapons and a quiver of 20
 arrows. If the PC has any points in `INT`, they may receive a random
@@ -307,8 +307,7 @@ nullified.
 
 ### Spell generator
 
-> Feel free to bring your own spells. This button generates a random
-> one from Knave 1e.
+Generate a random spell from Knave first edition ([view all](/spells)).
 
 Substitute `INT` with the caster's `INT` score. Unless otherwise
 noted, all spells with ongoing effects last up to `INT`×10 minutes,
